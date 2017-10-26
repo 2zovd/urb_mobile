@@ -2,46 +2,119 @@
 @import 'vars'
 
 ::-webkit-input-placeholder
-  color: #999999
-  opacity: 1
+	color: #999999
+	opacity: 1
 
 *:-moz-placeholder
-  color: #999999
-  opacity: 1
+	color: #999999
+	opacity: 1
 
 *::-moz-placeholder
-  color: #999999
-  opacity: 1
+	color: #999999
+	opacity: 1
 
 *:-ms-input-placeholder
-  color: #999999
-  opacity: 1
+	color: #999999
+	opacity: 1
 
 * 
-  box-sizing: border-box
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  -ms-box-sizing: border-box
-  -o-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-box-sizing: border-box
+
+button
+	background-color: transparent
+	border: none
+	outline: none
+	padding: 0
 
 ul, ol
-  margin: 0
-  padding: 0
-  list-style: none
+	margin: 0
+	padding: 0
+	list-style: none
 
 img 
-  border-style: none
+	border-style: none
 
 h1, h2, h3, h4, h5, h6, p, figure, li
-  margin: 0
+	margin: 0
+
+html
+	font-size: 10px
 
 html, body
-  height: 100%
+	height: 100%
 
 body 
 	margin: 0
 	min-width: 320px
-	max-width: 768px 
-	background-color: green
+	font-family: 'Roboto', sans-serif
+	color: #000
+	font-size: 1.4rem
+	line-height: 1.6rem
+	background-color: #fff
+	position: relative
+
+.wrapper-mob
+	min-height: 100%
+
+.header-mob
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	height: 4rem
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 2rem
+	box-shadow: 0 .2rem .2rem rgba(0,0,0,.12)
+
+.btn-header_nav
+	position: relative
+	background-image: linear-gradient(to right, #878787, #878787), linear-gradient(to right, #878787, #878787), linear-gradient(to right, #878787, #878787)
+	background-position: 0 0, 0 50%, 0 100%
+	background-size: 100% 0.2rem, 100% 0.2rem, 100% 0.2rem
+	background-repeat: no-repeat
+	border: none
+	background-color: transparent
+	width: 1.6rem
+	height: 1.2rem
+	outline: none
+	padding: 0
+
+.header-mob_title
+	font-size: 1.4rem
+	font-weight: $medium
+
+.btn-header_chat
+	width: 1.7rem
+	height: 1.5rem
+	background-image: url('../img/btn-header_chat.png')
+	background-repeat: no-repeat
+	background-position: 0 0
+	background-size: contain
+
+.footer-mob
+	display: flex
+	justify-content: space-between
+	padding: 2.3rem 1rem
+	margin: 0 2rem
+	border-top: 0.1rem solid #dbdbdb
+	a
+		display: inline-block
+		margin-right: 2.3rem
+	p
+		display: inline-block
+		font-weight: $medium
+		font-size: 1.1rem
+		text-align: right
+
 
 @import 'media'
