@@ -26,6 +26,9 @@ $(document).ready(function() {
 		$(".sidebar").removeClass('opened')
 	});
 	
+	$('.sidebar-dropdown').click(function() {
+		$(this).toggleClass('active');
+	})
 	
 });
 
