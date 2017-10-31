@@ -68,6 +68,7 @@ body
 	overflow-x: hidden
 
 .wrapper-mob
+	padding-top: 4rem
 
 .header-mob
 	position: fixed
@@ -82,8 +83,10 @@ body
 	display: flex
 	justify-content: space-between
 	align-items: center
+	background-color: #fff
 	padding: 0 2rem
 	box-shadow: 0 .2rem .2rem rgba(0,0,0,.12)
+	z-index: 10
 
 .btn-header_nav
 	position: relative
@@ -97,6 +100,7 @@ body
 	height: 1.2rem
 	outline: none
 	padding: 0
+	cursor: pointer
 	&:after
 		content: ''
 		position: absolute
@@ -116,6 +120,7 @@ body
 	position: relative
 	width: 2.5rem
 	height: 2.3rem
+	cursor: pointer
 	svg
 		fill: #878787
 	&:after
@@ -325,14 +330,16 @@ body
 
 .sidebar-nav_notification
 	display: inline-block
-	padding: 0.4rem 0.7rem
+	width: 3rem
+	height: 1.5rem
 	font-weight: $medium
 	font-size: 0.9rem
-	line-height: 1
+	line-height: 1.55rem
 	border-radius: 1rem
 	color: #fff
 	background-color: $red
 	margin-left: 3rem
+	text-align: center
 
 .sidebar-nav_dropdown
 	padding-left: 2rem
@@ -382,4 +389,144 @@ body
 		transform: rotate(180deg) translateY(50%)
 		svg
 			fill: $red
+
+/*letters*/
+.message-mob_nav
+	display: flex
+	justify-content: space-around
+	padding: 1rem 2rem
+	border-bottom: 0.1rem solid #dedede
+
+.btn-message-nav
+	display: inline-block
+	padding: 0 1rem
+	line-height: 2.9rem
+	min-width: 9rem
+	background-color: transparent
+	border: 0.1rem solid #c9c9c9
+	color: #757575
+	font-family: $main-font
+	font-weight: $medium
+	border-radius: $radius
+	&.active
+		color: #fff
+		background-color: $red
+		border-color: $red
+
+.message-list_row
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	align-items: stretch
+	border-bottom: 0.1rem solid #dedede
+	padding: 2rem 2rem
+	background-color: #f2f2f2
+	&:nth-child(even)
+		background-color: #eeeeee
+
+.message-list_photo
+	display: inline-block
+	position: relative
+	width: 6rem
+	height: 6rem
+	border-radius: 100%
+	margin-right: 2rem
+	img
+		border-radius: 100%
+		width: 100%
+		height: auto
+
+.message-list_status
+	position: absolute
+	right: 0
+	bottom: 0
+	width: 2rem
+	height: 1.8rem
+	background-image: url('../img/heart-2.svg')
+	background-repeat: no-repeat
+	background-position: 0 0
+	background-size: contain
+	fill: #a0a0a0
+	&.online
+		fill: $red
+
+.message-list_middle
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+
+.message-list_title
+	display: block
+	color: $black
+	font-size: 1.6rem
+	font-weight: $bold
+	font-family: $slab
+
+.message-list_subtitle
+	@extend .message-list_title
+	font-size: 1.4rem
+
+.message-list_city
+	display: block
+	color: #a0a0a0
+	font-weight: $regular
+	font-size: 1.4rem
+
+.message-list_delete
+	width: 1.3rem
+	height: 1.3rem
+	fill: #878787
+
+.message-list_left
+	display: flex
+	justify-content: flex-start
+
+.message-list_right
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: flex-end
+	
+.message-list_right-top
+	width: 8rem
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.message-list_notification
+	display: inline-block
+	background-color: $red
+	color: #fff
+	font-weight: $medium
+	font-size: 0.9rem
+	border-radius: 5rem
+	text-align: center
+	min-width: 1.7rem
+	min-height: 1.7rem
+	padding: 0.1rem 0.7rem
+	opacity: 0
+	span
+		display: inline-block
+		vertical-align: middle
+	&.active
+		opacity: 1
+
+.message-list_right-bottom
+	display: flex
+	span
+		color: #a0a0a0
+		font-size: 1.2rem
+		font-weight: $regular
+		display: inline-block
+		text-transform: capitalize
+		margin-right: 0.9rem
+
+.attachment-ico
+	display: inline-block
+	width: 2rem
+	height: 1.7rem
+	svg
+		fill: #a0a0a0
+		
+
 @import 'media'

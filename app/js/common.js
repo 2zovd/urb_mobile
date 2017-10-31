@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	console.log('Ready!');
 	
+	// Sidebar
 	$(".sidebar").sidebar({
 		side: "left",
 		speed: 500
@@ -28,7 +29,12 @@ $(document).ready(function() {
 	
 	$('.sidebar-dropdown').click(function() {
 		$(this).toggleClass('active');
-	})
+	});
 	
+	// Chat and message navigation
+	$('.btn-message-nav').click(function() {
+		$('.btn-message-nav').removeClass('active');
+		$(this).addClass('active');
+	});
 });
 
