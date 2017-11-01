@@ -223,6 +223,10 @@
 			h21.245v-1.62H1.926z M1.926,4.108"/>
 		</symbol>
 		
+		<symbol id="ico-left-arrow" viewbox="0 0 30 30">
+			<path d="M19.066,3l2.818,2.823l-9.249,9.268l9.249,9.266l-2.818,2.826L7,15.091L19.066,3z M19.066,3"/>
+		</symbol>
+		
 	</svg>
 	<!-- SVG Library END -->
 	
@@ -230,7 +234,7 @@
 		
 	<header class="header-mob">
 		<button class="btn-header_nav"></button>
-		<span class="header-mob_title">Letters</span>
+		<div class="header-mob_title"><span>Letters</span></div>
 		<a href="#" class="btn-header_chat">
 			<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-header-chat"></use></svg>
 		</a>
@@ -384,14 +388,18 @@
 	</div>
 
 	<main class="main-mob">
-		<section class="letters-mob">
-			<div class="message-mob_nav">
-				<button class="btn-message-nav active">New</button>
-				<button class="btn-message-nav">Inbox</button>
-				<button class="btn-message-nav">Deleted</button>
-			</div>
+	
+		<section class="messages-list-mob">
 			
+			<!--letters list-->
 			<div class="letters-list">
+			
+				<div class="message-mob_nav">
+					<button class="btn-message-nav active">New</button>
+					<button class="btn-message-nav">Inbox</button>
+					<button class="btn-message-nav">Deleted</button>
+				</div>
+			
 				<div class="message-list_row">
 				
 					<div class="message-list_left">
@@ -696,10 +704,47 @@
 					
 				</div>
 				
+			</div>
+			
+			<!--letters dialog opened-->
+			<div class="letters-message">
+
+				<div class="letter-header">
+				
+					<div class="message-list_left">
+						<a href="#" class="message-list_photo">
+							<img src="img/profile-women.png" alt="Message profile photo">
+							<div class="message-list_status">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+							</div>
+						</a>
+						
+						<div class="message-list_middle">
+							<a href="#" class="message-list_title">Anna, 23</a>
+							<a href="#" class="message-list_subtitle">ID 7</a>
+							<a href="#" class="message-list_city">Ukraine, Kiev</a>
+						</div>
+						
+					</div>
+
+
+					<div class="message-list_right">
+						<div class="message-list_right-top">
+							<button class="message-list_delete">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
+							</button>
+						</div>
+
+					</div>
+					
+				</div>
+				
 				
 			</div>
 			
+			
 		</section>
+		
 	</main>
 
 	<!--
