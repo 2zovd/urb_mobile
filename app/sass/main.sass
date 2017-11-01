@@ -115,6 +115,21 @@ body
 .header-mob_title
 	font-size: 1.4rem
 	font-weight: $medium
+	&.wrap
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	flex-direction: row
+	g
+		display: inline-block
+		margin-right: 1.2rem
+		width: 1.4rem
+		height: 1.9rem
+		fill: #767676
+	span
+		display: inline-block
+		line-height: 1.5rem
+	
 
 .btn-header_chat
 	position: relative
@@ -528,5 +543,19 @@ body
 	svg
 		fill: #a0a0a0
 		
+.letters-message
+	display: none
+
+.letter-header
+	display: flex
+	justify-content: space-between
+	flex-direction: row
+	align-items: stretch
+	border-bottom: 0.1rem solid #dedede
+	padding: 2rem 2rem
+	background-color: #fff
+	.message-list_right-top
+		justify-content: flex-end
+
 
 @import 'media'

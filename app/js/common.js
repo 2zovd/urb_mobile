@@ -36,5 +36,21 @@ $(document).ready(function() {
 		$('.btn-message-nav').removeClass('active');
 		$(this).addClass('active');
 	});
+	
+	// test letters
+	$('.message-list_row').click(function() {
+		$('.letters-list').css('display', 'none');
+		$('.letters-message').css('display', 'block');
+		$('.btn-header_nav').css('display', 'none');
+		$('.header-mob_title').html('<g><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-left-arrow"></use></svg></g><span>Letters</span>').addClass('wrap');
+	});
+	
+	$('.header-mob_title').click(function() {
+		$('.letters-list').css('display', 'block');
+		$('.letters-message').css('display', 'none');
+		$('.btn-header_nav').css('display', 'block');
+		$('.header-mob_title').html('<span>Letters</span>').removeClass('wrap').removeClass('wrap');
+	});
+	
 });
 
