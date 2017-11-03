@@ -52,5 +52,10 @@ $(document).ready(function() {
 		$('.header-mob_title').html('<span>Letters</span>').removeClass('wrap').removeClass('wrap');
 	});
 	
+	$('.message-header_nav-btn').click(function() {
+		$(this).toggleClass('active');
+		$('.message-header_nav-drop').toggleClass('active');
+	})
+	
 });
 

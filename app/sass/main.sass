@@ -44,7 +44,10 @@ h1, h2, h3, h4, h5, h6, p, figure, li
 html
 	font-size: 10px
 
-html, body
+html,
+body,
+.wrapper-mob,
+.main-mob
 	height: 100%
 
 svg
@@ -428,6 +431,11 @@ body
 		background-color: $red
 		border-color: $red
 
+.messages-list-mob,
+.letters-list,
+.letters-message
+	height: 100%
+
 .message-list_row
 	display: flex
 	justify-content: space-between
@@ -445,7 +453,7 @@ body
 	width: 6rem
 	height: 6rem
 	border-radius: 100%
-	margin-right: 2rem
+	margin-right: 1.5rem
 	img
 		border-radius: 100%
 		width: 100%
@@ -503,9 +511,8 @@ body
 	align-items: flex-end
 	
 .message-list_right-top
-	width: 8rem
 	display: flex
-	justify-content: space-between
+	justify-content: space-around
 	align-items: center
 
 .message-list_notification
@@ -513,13 +520,16 @@ body
 	background-color: $red
 	color: #fff
 	font-weight: $medium
-	font-size: 0.9rem
-	border-radius: 5rem
+	font-size: 1rem
+	border-radius: 10rem
 	text-align: center
-	min-width: 1.7rem
-	min-height: 1.7rem
-	padding: 0.1rem 0.7rem
+	min-width: 2.3rem
+	min-height: 2.3rem
+	padding: 0.2rem
 	opacity: 0
+	display: flex
+	align-items: center
+	justify-content: center
 	span
 		display: inline-block
 		vertical-align: middle
@@ -545,6 +555,8 @@ body
 		
 .letters-message
 	display: none
+	background-color: #f2f2f2
+	
 
 .letter-header
 	display: flex
@@ -554,8 +566,39 @@ body
 	border-bottom: 0.1rem solid #dedede
 	padding: 2rem 2rem
 	background-color: #fff
+	margin-bottom: 2rem
 	.message-list_right-top
 		justify-content: flex-end
 
+.message-header_nav
+	position: relative
+
+.message-header_nav-btn
+	border: 1px solid #e7e7e7
+	width: 2.9rem
+	height: 2.9rem
+	border-radius: $radius
+	padding: 0.3rem
+	&.active
+		fill: $red
+		
+.message-header_nav-drop
+	display: none
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 30rem
+	transform: translateY(130%)
+	box-shadow: 0 0.2rem 2rem rgba(0,0,0,.15)
+	&.active
+		display: block
+	ul
+		padding: 0.8rem 1.3rem
+		display: flex
+		justify-content: space-between
+		background-color: #fff
+		border-radius: $radius
+	li
+		
 
 @import 'media'
