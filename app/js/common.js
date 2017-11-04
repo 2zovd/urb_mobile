@@ -49,7 +49,13 @@ $(document).ready(function() {
 		$('.letters-list').css('display', 'block');
 		$('.letters-message').css('display', 'none');
 		$('.btn-header_nav').css('display', 'block');
-		$('.header-mob_title').html('<span>Letters</span>').removeClass('wrap').removeClass('wrap');
+		$('.header-mob_title').html('<span>Letters</span>').removeClass('wrap');
+	});
+    
+	$('.btn-header_chat').click(function() {
+		$('.letters-mob').css('display', 'none');
+		$('.chat-mob').css('display', 'block');
+        $('.header-mob_title').html('<div class="header-mob_title"><span>Chat</span></div>');
 	});
 	
 	$('.message-header_nav-btn').click(function() {

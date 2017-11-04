@@ -431,10 +431,10 @@ body
 		background-color: $red
 		border-color: $red
 
-.messages-list-mob,
 .letters-list,
-.letters-message
-	height: 100%
+.letters-message,
+.chat-dialog-list
+	min-height: 100%
 
 .message-list_row
 	display: flex
@@ -448,8 +448,8 @@ body
 		background-color: #eeeeee
 
 .message-list_photo
-	display: inline-block
 	position: relative
+	display: inline-block
 	width: 6rem
 	height: 6rem
 	border-radius: 100%
@@ -556,7 +556,6 @@ body
 .letters-message
 	display: none
 	background-color: #f2f2f2
-	
 
 .letter-header
 	display: flex
@@ -599,6 +598,143 @@ body
 		background-color: #fff
 		border-radius: $radius
 	li
-		
+    
+.letter-content
+    padding: 0 2rem 6rem
+    display: flex
+    flex-direction: column
+    
+.letter-content_open
+    padding: 2rem
+    background-color: #fff
+    border-radius: $radius
+    border: 0.1rem solid #e7e7e7
+    margin-bottom: 0.8rem
+    p
+        font-size: 1.4rem
+        font-weight: $regular
+        margin-bottom: 1rem
+        line-height: 2.4rem
+        color: #000
+        
+.letter-content_img
+    display: block
+    max-height: 200px
+    overflow: hidden
+    img
+        width: 100%
+        height: auto
 
+.letter-content_sent
+    background-color: #f5f5e9
+    border: 0.1rem solid #e7e7e7
+    border-radius: $radius
+    margin-bottom: 0.8rem
+    display: flex
+    justify-content: flex-start
+    padding: 1rem 1.5rem
+    
+.letter-content_name
+    font-family: $slab
+    font-size: 1.6rem
+    font-weight: $bold
+    
+.letter-content_date
+    font-family: $main-font
+    font-weight: $medium
+    font-size: 1.2rem
+    color: #adadad
+		
+.letter_sent-right
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    p
+        display: block
+        max-width: 20rem
+        color: #808080
+        
+.letter-sent_right-top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 1rem
+    
+.letter-sent_right-bottom
+    display: flex
+    justify-content: space-between
+
+.letter_inbox
+    background-color: #fff
+    border: 0.1rem solid #e7e7e7
+    border-radius: $radius
+    margin-bottom: 3rem
+    
+.letter-inbox_header
+    padding: 1.5rem 2rem
+    border-bottom: 0.1rem solid #e7e7e7
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    
+.letter-inbox_header-right
+    display: flex
+    justify-content: space-between
+    flex-grow: 1
+    
+.letter-inbox_content
+    padding: 1rem 1.5rem
+    p
+        font-size: 1.4rem
+        font-weight: $regular
+        margin-bottom: 1rem
+        line-height: 2.4rem
+        color: #000
+        
+.letter-message-field
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #fff
+    border-top: 0.1rem solid #e7e7e7
+    padding: 1.2rem 2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+.letter-input
+    border: 0
+    font-size: 1.4rem
+    font-weight: $medium
+    outline: none
+    flex-grow: 1
+        
+.letter-message_button
+    display: inline-block
+    width: 2rem
+    height: 2rem
+    fill: #9d9d9d
+    margin: 0 0.7rem
+    
+.btn-chat
+    display: inline-block
+    min-width: 8rem
+    font-family: $main-font
+    font-weight: $medium
+    line-height: 2.7rem
+    font-size: 1.2rem
+    text-align: center
+    border: 1px solid transparent
+    color: $red
+    border-radius: $radius
+    &.start-chat
+        border-color: #efb8bc
+        color: $red
+    &.stop-chat
+        border-color: #c9c9c9
+        color: #9d9d9d
+    
+.chat-mob
+    display: none
+    
 @import 'media'

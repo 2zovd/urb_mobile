@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Mobile URB</title>
+    <meta charset="UTF-8">
+    <title>Mobile URB</title>
 
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-	<!-- SVG Library -->
-	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <!-- SVG Library -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     	
     	<symbol id="ico-header-chat" viewBox="0 0 30 30">
     		<path d="M12.611,8.686c-5.094,0-9.224,3.425-9.224,7.658c0,2.072,0.997,3.955,2.614,5.332c-0.098,1.405-0.41,3.126-1.318,4.053
@@ -235,38 +235,47 @@
 				c1.266,0,2.293-1.027,2.293-2.293C26.466,14.233,25.44,13.207,24.173,13.207z"/>
 		</symbol>
 		
-	</svg>
-	<!-- SVG Library END -->
-	
-	<div class="wrapper-mob">
+		<symbol id="ico-smile" viewbox="0 0 30 30">
+		    <path d="M15,3C8.364,3,2.929,8.435,2.929,15.071c0,6.636,5.435,12.071,12.071,12.071c6.636,0,12.071-5.435,12.071-12.071
+			C27.071,8.435,21.636,3,15,3L15,3z M19.226,10.244c0.966,0,1.809,0.842,1.809,1.809c0,0.967-0.844,1.809-1.809,1.809
+			c-0.967,0-1.809-0.842-1.809-1.809C17.417,11.086,18.259,10.244,19.226,10.244L19.226,10.244z M10.773,10.244
+			c0.967,0,1.81,0.842,1.81,1.809c0,0.967-0.842,1.809-1.81,1.809c-0.965,0-1.809-0.842-1.809-1.809
+			C8.964,11.086,9.808,10.244,10.773,10.244L10.773,10.244z M15,22.315c-3.135,0-5.794-2.052-6.76-4.827h13.52
+			C20.794,20.263,18.135,22.315,15,22.315L15,22.315z M15,22.315"/>
+		</symbol>
 		
-	<header class="header-mob">
-		<button class="btn-header_nav"></button>
-		<div class="header-mob_title"><span>Letters</span></div>
-		<a href="#" class="btn-header_chat">
+	</svg>
+    <!-- SVG Library END -->
+
+    <div class="wrapper-mob">
+
+        <header class="header-mob">
+            <button class="btn-header_nav"></button>
+            <div class="header-mob_title"><span>Letters</span></div>
+            <a href="#" class="btn-header_chat">
 			<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-header-chat"></use></svg>
 		</a>
-	</header>
-	
-	<div class="sidebar-opened"></div>
-	<div class="sidebar">
-		
-		<!--
+        </header>
+
+        <div class="sidebar-opened"></div>
+        <div class="sidebar">
+
+            <!--
 		<span class="btn-close-sidebar">
 			<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use></svg>
 		</span>
 		-->
 
-		<div class="btn-close-sidebar">
-			<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
-		</div>
+            <div class="btn-close-sidebar">
+                <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
+            </div>
 
-		<div class="sidebar-top">
+            <div class="sidebar-top">
 
-			<img src="img/logo-mob.png" alt="Ukrainian real brides" class="sidebar-logo">
+                <img src="img/logo-mob.png" alt="Ukrainian real brides" class="sidebar-logo">
 
-			<div class="sidebar-user-wrap">
-				<a href="#" class="sidebar-user-photo">
+                <div class="sidebar-user-wrap">
+                    <a href="#" class="sidebar-user-photo">
 					<img src="img/profile-man.png" alt="Profile photo">
 					
 					<span href="#" class="sidebar-user-settings">
@@ -280,34 +289,34 @@
 						</i>
 					</div>
 				</a>
-				<a href="#" class="sidebar_user-name">Alexander</a>
-			</div>
-		</div>
+                    <a href="#" class="sidebar_user-name">Alexander</a>
+                </div>
+            </div>
 
-		<nav class="sidebar-nav">
+            <nav class="sidebar-nav">
 
-			<ul>
-				<li>
-					<a href="#">
+                <ul>
+                    <li>
+                        <a href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-female"></use></svg>
 						</span>
 						<span>Woman profiles</span>
 					</a>
-				</li>
+                    </li>
 
-				<li>
-					<a href="#">
+                    <li>
+                        <a href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-letter"></use></svg>
 						</span>
 						<span>Letters</span>
 						<strong class="sidebar-nav_notification">221</strong>
 					</a>
-				</li>
+                    </li>
 
-				<li class="sidebar-dropdown">
-					<a class="sidebar-dropdown" href="#">
+                    <li class="sidebar-dropdown">
+                        <a class="sidebar-dropdown" href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-nav"></use></svg>
 						</span>
@@ -316,15 +325,15 @@
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
 						</strong>
 					</a>
-					<ul class="sidebar-nav_dropdown">
-						<li><a href="#">Matchmaking Coaching</a></li>
-						<li><a href="#">Matchmaking Tours</a></li>
-						<li><a href="#">Personal Matchmaking</a></li>
-					</ul>
-				</li>
+                        <ul class="sidebar-nav_dropdown">
+                            <li><a href="#">Matchmaking Coaching</a></li>
+                            <li><a href="#">Matchmaking Tours</a></li>
+                            <li><a href="#">Personal Matchmaking</a></li>
+                        </ul>
+                    </li>
 
-				<li class="sidebar-dropdown">
-					<a href="#">
+                    <li class="sidebar-dropdown">
+                        <a href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-info"></use></svg>
 						</span>
@@ -334,427 +343,557 @@
 						</strong>
 					</a>
 
-					<ul class="sidebar-nav_dropdown">
-						<li><a href="#">Support</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
+                        <ul class="sidebar-nav_dropdown">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
 
-				</li>
+                    </li>
 
-				<li>
-					<a href="#">
+                    <li>
+                        <a href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-coins-nav"></use></svg>
 						</span>
 						<span>Purchase coins</span>
 					</a>
-				</li>
+                    </li>
 
-				<li>
-					<a href="#">
+                    <li>
+                        <a href="#">
 						<span class="sidebar-nav_ico">
 							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-blog"></use></svg>
 						</span>
 						<span>Blog</span>
 					</a>
-				</li>
+                    </li>
 
-			</ul>
-		</nav>
+                </ul>
+            </nav>
 
-		<div class="sidebar-footer">
-			<ul class="sidebar-footer_nav">
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Log out</a></li>
-			</ul>
+            <div class="sidebar-footer">
+                <ul class="sidebar-footer_nav">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
 
-			<ul class="sidebar-footer_social">
-				<li>
-					<a href="https://www.facebook.com/ukrainianrealbrides">
+                <ul class="sidebar-footer_social">
+                    <li>
+                        <a href="https://www.facebook.com/ukrainianrealbrides">
 						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-facebook"></use></svg>
 					</a>
-				</li>
+                    </li>
 
-				<li>
-					<a href="https://www.instagram.com/ukrainianrealbrides">
+                    <li>
+                        <a href="https://www.instagram.com/ukrainianrealbrides">
 						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-instagram"></use></svg>
 					</a>
-				</li>
+                    </li>
 
-				<li>
-					<a href="https://www.instagram.com/ukrainianrealbrides">
+                    <li>
+                        <a href="https://www.instagram.com/ukrainianrealbrides">
 						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-youtube"></use></svg>
 					</a>
-				</li>
+                    </li>
 
 
-			</ul>
+                </ul>
 
-		</div>
+            </div>
 
-	</div>
+        </div>
 
-	<main class="main-mob">
-	
-		<section class="messages-list-mob">
-			
-			<!--letters list-->
-			<div class="letters-list">
-			
-				<div class="message-mob_nav">
-					<button class="btn-message-nav">New</button>
-					<button class="btn-message-nav active">Inbox</button>
-				</div>
-			
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status online">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+        <main class="main-mob">
+
+            <section class="letters-mob">
+
+                <!--letters list-->
+                <div class="letters-list">
+
+                    <div class="message-mob_nav">
+                        <button class="btn-message-nav">New</button>
+                        <button class="btn-message-nav active">Inbox</button>
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status online">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 24</span>
 							<span class="message-list_subtitle">ID 31</span>
 							<span class="message-list_city">Ukraine, Kharkiv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>7</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>7</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Kharkiv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>7</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>7</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Kharkiv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification active"><span>99</span></div>
-							<!--							
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification active"><span>99</span></div>
+                                <!--							
 							<button class="message-list_delete">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
 							</button>
 							-->
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>99</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>99</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>99</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>99</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>99</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>99</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification"><span>99</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification"><span>99</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-				<div class="message-list_row">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                        </div>
+
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-list_notification active"><span>1</span></div>
-						</div>
-						
-						<div class="message-list_right-bottom">
-							<span>01 nov 2017</span>
-							<i class="attachment-ico">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification active"><span>1</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <span>01 nov 2017</span>
+                                <i class="attachment-ico">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
 							</i>
-						</div>
+                            </div>
 
-					</div>
-					
-				</div>
-				
-			</div>
-			
-			<!--letters dialog opened-->
-			<div class="letters-message">
+                        </div>
 
-				<div class="letter-header">
-				
-					<div class="message-list_left">
-						<div class="message-list_photo">
-							<img src="img/profile-women.png" alt="Message profile photo">
-							<div class="message-list_status">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-							</div>
-						</div>
-						
-						<a href="#" class="message-list_middle">
+                    </div>
+
+                </div>
+
+                <!--letters dialog opened-->
+                <div class="letters-message">
+
+                    <div class="letter-header">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
 							<span class="message-list_title">Alexandra, 35</span>
 							<span class="message-list_subtitle">ID 98</span>
 							<span class="message-list_city">Ukraine, Lviv</span>
 						</a>
-						
-					</div>
+
+                        </div>
 
 
-					<div class="message-list_right">
-						<div class="message-list_right-top">
-							<div class="message-header_nav">
-								<button class="message-header_nav-btn">
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-header_nav">
+                                    <button class="message-header_nav-btn">
 									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use></svg>
 								</button>
-								<div class="message-header_nav-drop">
-									<ul>
-										<li>
-											<a href="#">
+                                    <div class="message-header_nav-drop">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
 												<img src="" alt="">
 												<span>Send Gift</span>
 											</a>
-										</li>
-										<li>
-											<a href="#">Send a Sticker</a>
-										</li>
-										<li>
-											<a href="#">Video chat</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							
-						</div>
+                                            </li>
+                                            <li>
+                                                <a href="#">Send a Sticker</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Video chat</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					</div>
-					
-				</div>
-				
-				
-			</div>
-			
-			
-		</section>
-		
-	</main>
+                    <div class="letter-content">
+                        <div class="letter-content_open">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan lacus id orci mattis pulvinar. Maecenas pharetra auctor sapien, nec porttitor dui auctor in. Nulla interdum sapien quis sagittis viverra. Mauris congue porttitor nisi ut tincidunt. Quisque in tellus justo. Duis mattis, leo sed mollis tincidunt, sem odio facilisis neque, ac sollicitudin orci ex ac quam. Vestibulum id egestas nisi, non vehicula sapien. Nam nunc enim, lacinia in dui vitae, vulputate iaculis ante.</p>
+                            <div class="letter-content_img">
+                                <img src="img/letter-open.jpg" alt="Attached photo">
+                            </div>
+                        </div>
 
-	<!--
+                        <div class="letter-content_sent">
+                            <div class="message-list_photo">
+                                <img src="img/profile-man.png" alt="Message profile photo">
+                                <div class="message-list_status online">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <div class="letter_sent-right">
+                                <div class="letter-sent_right-top">
+                                    <span class="letter-content_name">Bill</span>
+                                    <span class="letter-content_date">19:25</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitqu ...</p>
+                            </div>
+                        </div>
+
+                        <div class="letter_inbox">
+                            <div class="letter-inbox_header">
+                                <div class="message-list_photo">
+                                    <img src="img/profile-women.png" alt="Message profile photo">
+                                    <div class="message-list_status online">
+                                        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                    </div>
+                                </div>
+                                <div class="letter-inbox_header-right">
+                                    <span class="letter-content_name">Alexandra</span>
+                                    <span class="letter-content_date">10 Dec 17</span>
+                                </div>
+
+                            </div>
+
+                            <div class="letter-inbox_content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan lacus id orci mattis pulvinar. Maecenas pharetra auctor sapien, nec porttitor dui auctor in. Nulla interdum sapien quis sagittis viverra. Mauris congue porttitor nisi ut tincidunt. Quisque in tellus justo. Duis mattis, leo sed mollis tincidunt, sem odio facilisis neque, ac sollicitudin orci ex ac quam. Vestibulum id egestas nisi, non vehicula sapien. Nam nunc enim, lacinia in dui vitae, vulputate iaculis ante.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="letter-message-field">
+                        <input class="letter-input" type="text" placeholder="Write your message">
+                        <div class="letter-field_right">
+                            <a class="letter-message_button" href="#">
+				            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use></svg>
+				        </a>
+                            <a class="letter-message_button" href="#">
+				            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
+				        </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <div class="chat-mob">
+                <div class="chat-dialog-list">
+
+                    <div class="message-mob_nav">
+                        <button class="btn-message-nav active">Online</button>
+                        <button class="btn-message-nav">Favorites</button>
+                        <button class="btn-message-nav">History</button>
+                    </div>
+
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status online">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
+                                <span class="message-list_title">Alexandra, 24</span>
+                                <span class="message-list_subtitle">ID 31</span>
+                                <span class="message-list_city">Ukraine, Kharkiv</span>
+						    </a>
+
+                        </div>
+
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification active"><span>7</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <button class="btn-chat start-chat">Start chat</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="message-list_row">
+
+                        <div class="message-list_left">
+                            <div class="message-list_photo">
+                                <img src="img/profile-women.png" alt="Message profile photo">
+                                <div class="message-list_status online">
+                                    <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+                                </div>
+                            </div>
+
+                            <a href="#" class="message-list_middle">
+                                <span class="message-list_title">Alexandra, 24</span>
+                                <span class="message-list_subtitle">ID 31</span>
+                                <span class="message-list_city">Ukraine, Kharkiv</span>
+						    </a>
+
+                        </div>
+
+                        <div class="message-list_right">
+                            <div class="message-list_right-top">
+                                <div class="message-list_notification active"><span>7</span></div>
+                            </div>
+
+                            <div class="message-list_right-bottom">
+                                <button class="btn-chat stop-chat">Start chat</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <!--
 	<footer class="footer-mob">
 		<a href="#" class="footer-mob_logo">
 			<img src="img/logo-mob.png" alt="Ukrainian real brides">
@@ -762,13 +901,13 @@
 		<p>Ukrainian Real Brides 2015-2017 © All rights reserved.</p>
 	</footer>
 	-->
-		
-	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+    </div>
 
-	<script src="js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+
+    <script src="js/common.js"></script>
 
 </body>
 
