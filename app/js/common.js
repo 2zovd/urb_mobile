@@ -74,5 +74,12 @@ $(document).ready(function() {
         $('.header-mob_title').html('<div class="header-mob_title"><span>Chat</span></div>');
 	});
 	
+	
+	//btn chat
+	$('.btn-header-mob_chat').click(function() {
+		$('.btn-chat').toggleClass('start-chat stop-chat');
+	});
+	
+	
 });
 
