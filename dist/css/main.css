@@ -230,6 +230,11 @@ body {
           align-items: center;
   padding-top: 2.8rem;
   padding-bottom: 3rem; }
+  .sidebar.logged-out {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .sidebar-top {
   text-align: center;
@@ -408,8 +413,8 @@ body {
   .sidebar-footer_nav li {
     display: inline-block;
     position: relative; }
-    .sidebar-footer_nav li:first-child {
-      border-right: 0.01rem solid #dbdbdb; }
+    .sidebar-footer_nav li:last-child {
+      border-left: 0.01rem solid #dbdbdb; }
   .sidebar-footer_nav a {
     display: block;
     padding: 0.1rem 0.9rem;

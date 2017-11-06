@@ -183,7 +183,9 @@ body
 	align-items: center
 	padding-top: 2.8rem
 	padding-bottom: 3rem
-
+	&.logged-out
+		justify-content: space-between
+	
 .sidebar-top
 	text-align: center
 	margin-bottom: 4rem
@@ -326,8 +328,8 @@ body
 	li
 		display: inline-block
 		position: relative
-		&:first-child
-			border-right: 0.01rem solid #dbdbdb
+		&:last-child
+			border-left: 0.01rem solid #dbdbdb
 	a
 		display: block
 		padding: 0.1rem 0.9rem

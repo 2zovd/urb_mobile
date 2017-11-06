@@ -89,5 +89,12 @@ $(document).ready(function() {
 		  }
         });
 	
+	//Log out
+	$('.btn-log-out').click(function() {
+		$(this).css('display', 'none');
+		$('.sidebar-user-wrap').css('display', 'none');
+		$('.sidebar').addClass('logged-out');
+	});
+	
 });
 
