@@ -65,7 +65,7 @@ $(document).ready(function() {
 		$('.btn-header_nav').css('display', 'none');
 		$('.btn-header_chat').css('display', 'none');
 		$('.header-mob_title').html('<g><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-left-arrow"></use></svg></g><span>Chat</span>').addClass('wrap');
-		$('.btn-header-mob_chat').addClass('active').html('<button class="btn-chat start-chat">Start chat</button>');
+		$('.btn-header-mob_chat').addClass('active').html('<button class="btn-chat cancel-chat">Stop chat</button>');
 	});
 	
 	$('.btn-header_chat').click(function() {
@@ -76,10 +76,18 @@ $(document).ready(function() {
 	
 	
 	//btn chat
-	$('.btn-header-mob_chat').click(function() {
-		$('.btn-chat').toggleClass('start-chat stop-chat');
+	$('.btn-chat').click(function() {
+		$(this).toggleClass('cancel-chat');
 	});
 	
+	//input empty
+	$(".message-input").keyup(function(){
+		  if ($(this).val()) {
+			$('.btn-send').addClass('active');
+		  } else {
+			$('.btn-send').removeClass('active');
+		  }
+        });
 	
 });
 
