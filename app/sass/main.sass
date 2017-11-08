@@ -715,7 +715,6 @@ body
         width: 100%
         height: auto
         max-width: 300px
-        margin: 0 auto
 
 .letter-content_sent
     background-color: #f5f5e9
@@ -797,6 +796,7 @@ body
     
 .message-input
 	border: 0
+	font-family: $main-font
 	font-size: 1.4rem
 	font-weight: $medium
 	outline: none
@@ -810,6 +810,7 @@ body
 	fill: #9d9d9d
 	margin: 0 0.7rem
 	&.btn-send
+		pointer-events: none
 		&.active
 			fill: $red
     
@@ -857,7 +858,8 @@ body
 	border-radius: $radius
 	box-shadow: 0 0.2rem 0.2rem rgba(0,0,0,.12)
 	margin-bottom: 2.5rem
-	width: 25rem
+	min-width: 25rem
+	max-width: 85%
 	position: relative
 	&:before
 		content: ''
