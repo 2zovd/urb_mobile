@@ -9,6 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
+	<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -16,22 +17,22 @@
 <body>
 	<!-- SVG Library -->
 	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    	
-    	<symbol id="ico-header-chat" viewBox="0 0 30 30">
-    		<path d="M12.611,8.686c-5.094,0-9.224,3.425-9.224,7.658c0,2.072,0.997,3.955,2.614,5.332c-0.098,1.405-0.41,3.126-1.318,4.053
+
+		<symbol id="ico-header-chat" viewBox="0 0 30 30">
+			<path d="M12.611,8.686c-5.094,0-9.224,3.425-9.224,7.658c0,2.072,0.997,3.955,2.614,5.332c-0.098,1.405-0.41,3.126-1.318,4.053
 					c1.81,0,3.653-1.219,4.824-2.177c0.97,0.293,2.017,0.45,3.105,0.45c5.094,0,9.224-3.433,9.224-7.658
 					C21.835,12.111,17.704,8.686,12.611,8.686z M24.878,17.083c0.777-1.114,1.221-2.414,1.221-3.806c0-4.233-4.13-7.658-9.224-7.658
 					c-2.246,0-4.304,0.666-5.899,1.765c0.749-0.149,1.54-0.232,2.351-0.232c5.481,0,9.93,3.77,9.93,8.42
-					c0,1.832-0.687,3.53-1.858,4.914c1.166,0.957,3.016,2.182,4.824,2.182C24.934,21.354,24.844,18.431,24.878,17.083z"/>
+					c0,1.832-0.687,3.53-1.858,4.914c1.166,0.957,3.016,2.182,4.824,2.182C24.934,21.354,24.844,18.431,24.878,17.083z" />
 		</symbol>
-    
-    	<symbol id="nav-close-ico" viewBox="0 0 30 30">
+
+		<symbol id="nav-close-ico" viewBox="0 0 30 30">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M29.268,2.371l-1.653-1.654L14.998,13.345L2.385,0.717L0.732,2.371L13.344,15
-					L0.732,27.629l1.653,1.654l12.613-12.629l12.617,12.629l1.653-1.654L16.652,15L29.268,2.371z M29.268,2.371"/>
-    	</symbol>
-    	
-    	<symbol id="settings-ico" viewBox="0 0 30 30">
-    		<path fill-rule="evenodd" clip-rule="evenodd" d="M29.09,13.413c-0.045-0.399-0.509-0.698-0.911-0.698
+					L0.732,27.629l1.653,1.654l12.613-12.629l12.617,12.629l1.653-1.654L16.652,15L29.268,2.371z M29.268,2.371" />
+		</symbol>
+
+		<symbol id="settings-ico" viewBox="0 0 30 30">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M29.09,13.413c-0.045-0.399-0.509-0.698-0.911-0.698
 			c-1.299,0-2.453-0.762-2.936-1.942c-0.494-1.208-0.176-2.616,0.793-3.504c0.305-0.278,0.342-0.745,0.087-1.069
 			c-0.665-0.844-1.422-1.607-2.246-2.267c-0.324-0.259-0.798-0.223-1.078,0.087c-0.846,0.935-2.364,1.283-3.538,0.794
 			c-1.221-0.513-1.991-1.75-1.915-3.077c0.025-0.417-0.28-0.779-0.696-0.828c-1.06-0.123-2.128-0.126-3.191-0.008
@@ -47,9 +48,9 @@
 			c-0.987-0.893-1.307-2.314-0.794-3.535c0.482-1.149,1.647-1.921,2.901-1.921l0.175,0.005c0.407,0.033,0.781-0.28,0.83-0.695
 			C29.209,15.57,29.21,14.486,29.09,13.413L29.09,13.413z M14.456,21.508c-3.918,0-5.98-2.903-5.98-6.512
 			c0-3.609,2.934-6.545,6.542-6.545c3.607,0,6.542,2.936,6.542,6.545C21.559,18.605,18.374,21.508,14.456,21.508L14.456,21.508z
-			 M15.018,21.541"/>
+			 M15.018,21.541" />
 		</symbol>
-		
+
 		<symbol id="ico-balance-sidebar" viewBox="0 0 30 30">
 			<path d="M9.13,16.926c0.787,0,1.549-0.05,2.269-0.143V9.011c-0.72-0.093-1.482-0.143-2.269-0.143
 					c-4.496,0-8.141,1.627-8.141,3.635v0.789C0.99,15.298,4.634,16.926,9.13,16.926z M9.13,20.984c0.787,0,1.549-0.05,2.269-0.143
@@ -65,9 +66,9 @@
 					 M20.87,20.886c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.489-0.171,0.745v0.788c0,2.007,3.645,3.635,8.142,3.635
 					c4.496,0,8.141-1.627,8.141-3.635V18.74c0-0.255-0.059-0.504-0.172-0.745C28.07,19.645,24.794,20.886,20.87,20.886z
 					 M20.87,24.944c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.49-0.171,0.744v0.788c0,2.007,3.645,3.635,8.142,3.635
-					c4.496,0,8.141-1.627,8.141-3.635v-0.788c0-0.255-0.059-0.504-0.172-0.744C28.07,23.704,24.794,24.944,20.87,24.944z"/>
+					c4.496,0,8.141-1.627,8.141-3.635v-0.788c0-0.255-0.059-0.504-0.172-0.744C28.07,23.704,24.794,24.944,20.87,24.944z" />
 		</symbol>
-		
+
 		<symbol id="ico-female" viewBox="0 0 30 30">
 			<path d="M2.754,24.143l-1.275,1.269c-0.425,0.423-0.425,1.058,0,1.481l1.487,1.481c0.427,0.424,1.058,0.424,1.484,0l1.275-1.269
 			c0.212-0.211,0.534-0.211,0.741,0l1.275,1.269c0.425,0.424,1.064,0.424,1.489,0l1.488-1.481c0.426-0.423,0.426-1.058,0-1.481
@@ -77,36 +78,36 @@
 			c-0.212,0.211-0.528,0.211-0.742,0L4.345,19.07c-0.424-0.417-1.062-0.417-1.488,0l-1.488,1.481c-0.419,0.424-0.419,1.058,0,1.481
 			l1.276,1.269C2.966,23.617,2.966,24.04,2.754,24.143L2.754,24.143z M17.086,5.546c4.143,0,7.436,3.276,7.436,7.4
 			c0,4.117-3.293,7.393-7.436,7.393c-4.137,0-7.431-3.276-7.431-7.393C9.655,8.822,12.948,5.546,17.086,5.546L17.086,5.546z
-			 M17.086,5.546"/>
+			 M17.086,5.546" />
 		</symbol>
-		
+
 		<symbol id="ico-letter" viewBox="0 0 30 30">
 			<path d="M29,22.25c0,0.564-0.169,1.087-0.44,1.547l-8.633-9.092l8.54-7.033C28.8,8.169,29,8.752,29,9.382V22.25z M15.327,16.356
 				L27.211,6.57c-0.487-0.251-1.037-0.405-1.629-0.405H5.073c-0.594,0-1.142,0.154-1.628,0.405L15.327,16.356z M18.64,15.764
 				l-2.751,2.267c-0.161,0.132-0.361,0.198-0.562,0.198c-0.201,0-0.401-0.066-0.562-0.198l-2.751-2.267l-8.743,9.208
 				c0.524,0.309,1.139,0.495,1.803,0.495h20.508c0.664,0,1.279-0.185,1.802-0.495L18.64,15.764z M2.188,7.673
-				C1.856,8.169,1.655,8.752,1.655,9.382V22.25c0,0.564,0.168,1.087,0.439,1.547l8.633-9.094L2.188,7.673z M2.188,7.673"/>
-		</symbol>		
-		
+				C1.856,8.169,1.655,8.752,1.655,9.382V22.25c0,0.564,0.168,1.087,0.439,1.547l8.633-9.094L2.188,7.673z M2.188,7.673" />
+		</symbol>
+
 		<symbol id="ico-heart-nav" viewBox="0 0 30 30">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M14.991,7.655c-3.777-9.443-14.513-7.24-14.584,3.72
 			c-0.039,6.02,5.112,8.27,8.542,10.676c3.326,2.334,5.693,5.526,6.064,6.885c0.317-1.331,2.954-4.614,6.033-6.95
-			c3.366-2.554,8.581-4.657,8.542-10.676C29.517,0.323,18.594-1.411,14.991,7.655z"/>
+			c3.366-2.554,8.581-4.657,8.542-10.676C29.517,0.323,18.594-1.411,14.991,7.655z" />
 		</symbol>
-		
+
 		<symbol id="ico-heart-status" viewBox="0 0 30 30">
 			<path d="M29.106,10.842c0,2.284-1.281,4.03-1.281,4.03c-0.704,0.959-1.972,2.429-2.819,3.266l-8.465,8.38
 			c-0.846,0.838-2.232,0.838-3.079,0l-8.465-8.38c-0.847-0.838-2.115-2.308-2.819-3.266c0,0-1.282-1.746-1.282-4.03
 			C0.894,6.511,4.442,3,8.818,3c2.251,0,4.283,0.929,5.725,2.421c0.161,0.166,0.161,0.166,0.161,0.166
-			c0.162,0.193,0.43,0.193,0.593,0c0,0,0,0,0.16-0.166C16.899,3.929,18.931,3,21.182,3C25.558,3,29.106,6.511,29.106,10.842z"/>
+			c0.162,0.193,0.43,0.193,0.593,0c0,0,0,0,0.16-0.166C16.899,3.929,18.931,3,21.182,3C25.558,3,29.106,6.511,29.106,10.842z" />
 		</symbol>
-		
+
 		<symbol id="ico-info" viewBox="0 0 30 30">
 			<path d="M15.056,2.075C7.672,2.075,1.631,8.117,1.631,15.5c0,7.395,6.041,13.436,13.425,13.436
 			c7.395,0,13.435-6.041,13.435-13.436C28.491,8.117,22.451,2.075,15.056,2.075L15.056,2.075z M16.737,23.894h-3.351V12.15h3.351
-			V23.894z M16.737,10.469h-3.351V7.107h3.351V10.469z M16.737,10.469"/>
+			V23.894z M16.737,10.469h-3.351V7.107h3.351V10.469z M16.737,10.469" />
 		</symbol>
-		
+
 		<symbol id="ico-coins-nav" viewBox="0 0 30 30">
 			<path d="M29.419,10.871c-0.049-0.794-1.012-1.415-2.941-1.889c0.065-0.139,0.102-0.284,0.102-0.434V5.296h-0.006
 			c-0.172-2.709-11.489-2.789-12.787-2.789c-1.301,0-12.618,0.08-12.789,2.789H0.99v3.251c0.002,0.883,1.164,1.575,2.893,2.09
@@ -175,9 +176,9 @@
 			l-0.005,0.004C2.339,19.766,1.939,19.469,1.939,19.235L1.939,19.235z M3.359,24.347v-1.925c0.38,0.234,0.859,0.447,1.421,0.64
 			v2.224C3.859,24.949,3.359,24.608,3.359,24.347L3.359,24.347z M25.633,25.287v-2.224c0.562-0.193,1.041-0.407,1.421-0.64v1.922
 			C27.054,24.608,26.554,24.949,25.633,25.287L25.633,25.287z M27.054,15.062v-2.224c0.564-0.193,1.044-0.406,1.42-0.64v1.924
-			C28.474,14.384,27.975,14.724,27.054,15.062L27.054,15.062z M27.054,15.062"/>
+			C28.474,14.384,27.975,14.724,27.054,15.062L27.054,15.062z M27.054,15.062" />
 		</symbol>
-		
+
 		<symbol id="ico-blog" viewBox="0 0 30 30">
 			<path d="M11.942,6.121c6.595,0,11.941,5.35,11.941,11.949h-2.559c0-2.508-0.976-4.865-2.748-6.639
 				c-1.772-1.773-4.128-2.75-6.634-2.75V6.121z M11.942,1C21.363,1,29,8.642,29,18.069h-2.56c0-1.96-0.382-3.86-1.138-5.647
@@ -185,14 +186,14 @@
 				c1.166,1.167,1.749,2.696,1.748,4.226c-1.704,2.56-1.704,5.973-1.704,5.973c-6.824,0-11.941,5.121-11.941,5.121l-0.373-0.374
 				l-0.617-0.617l7.558-7.563c0.083,0.012,0.168,0.019,0.255,0.019c0.942,0,1.706-0.764,1.706-1.707s-0.764-1.707-1.706-1.707
 				c-0.942,0-1.706,0.764-1.706,1.707c0,0.087,0.007,0.172,0.019,0.255l-7.558,7.564l-0.989-0.991c0,0,5.117-5.121,5.117-11.949
-				c0,0,3.411,0,5.97-1.707C14.323,11.242,15.85,11.825,17.016,12.992L17.016,12.992z M17.016,12.992"/>
+				c0,0,3.411,0,5.97-1.707C14.323,11.242,15.85,11.825,17.016,12.992L17.016,12.992z M17.016,12.992" />
 		</symbol>
-		
+
 		<symbol id="ico-facebook" viewBox="0 0 30 30">
 			<path d="M12.788,23.449h3.459v-8.64h2.321c0,0,0.218-1.394,0.323-2.919h-2.631V9.903c0-0.297,0.377-0.696,0.75-0.696h1.885V6.179
-			h-2.564c-3.629,0-3.544,2.91-3.544,3.345v2.377h-1.684v2.907h1.684V23.449z M12.788,23.449"/>
+			h-2.564c-3.629,0-3.544,2.91-3.544,3.345v2.377h-1.684v2.907h1.684V23.449z M12.788,23.449" />
 		</symbol>
-		
+
 		<symbol id="ico-instagram" viewBox="0 0 30 30">
 			<path d="M19.263,6.179h-8.404c-2.359,0-4.278,1.985-4.278,4.426v8.693c0,2.441,1.919,4.426,4.278,4.426h8.404
 					c2.359,0,4.278-1.985,4.278-4.426v-8.693C23.541,8.164,21.622,6.179,19.263,6.179z M21.696,19.298
@@ -201,62 +202,64 @@
 					c0.57,0,1.033-0.48,1.033-1.069C20.603,9.708,20.14,9.229,19.569,9.229z M15.061,10.433c-2.409,0-4.368,2.027-4.368,4.518
 					c0,2.491,1.959,4.519,4.368,4.519c2.408,0,4.368-2.028,4.368-4.519C19.429,12.46,17.469,10.433,15.061,10.433z M15.061,17.561
 					c-1.39,0-2.523-1.171-2.523-2.61c0-1.438,1.132-2.609,2.523-2.609c1.391,0,2.522,1.171,2.522,2.609
-					C17.583,16.39,16.452,17.561,15.061,17.561z"/>
+					C17.583,16.39,16.452,17.561,15.061,17.561z" />
 		</symbol>
-		
+
 		<symbol id="ico-youtube" viewBox="0 0 30 30">
 			<path d="M5.834,23.471c3.034,0.35,6.105,0.352,9.162,0.35c3.059,0.002,6.129,0,9.163-0.35c1.281-0.148,2.345-1.142,2.645-2.488
 			c0.427-1.916,0.428-4.009,0.428-5.983c0-1.974,0.004-4.066-0.423-5.983c-0.299-1.347-1.364-2.339-2.646-2.487
 			c-3.034-0.351-6.105-0.352-9.162-0.351c-3.058-0.001-6.13,0-9.163,0.351c-1.28,0.148-2.345,1.141-2.643,2.487
 			C2.769,10.934,2.764,13.026,2.764,15c0,1.973,0,4.067,0.427,5.983C3.488,22.329,4.553,23.323,5.834,23.471L5.834,23.471z
-			 M11.84,10.559c2.593,1.4,5.169,2.789,7.779,4.197c-2.603,1.396-5.179,2.778-7.779,4.173V10.559z M11.84,10.559"/>
+			 M11.84,10.559c2.593,1.4,5.169,2.789,7.779,4.197c-2.603,1.396-5.179,2.778-7.779,4.173V10.559z M11.84,10.559" />
 		</symbol>
-		
+
 		<symbol id="ico-sidebar-caret" viewBox="0 0 30 30">
-			<path fill-rule="evenodd" clip-rule="evenodd" d="M15.328,24.334l9.784-15.657H5.543L15.328,24.334"/>
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M15.328,24.334l9.784-15.657H5.543L15.328,24.334" />
 		</symbol>
-		
+
 		<symbol id="ico-attachment" viewbox="0 0 30 30">
 			<path d="M26.44,8.968v16.197H6.829V8.968H26.44 M28.074,7.348H5.194v19.437h22.88V7.348z M8.463,21.925h16.343l-3.269-9.719
 			l-4.903,6.479l-3.268-3.239L8.463,21.925z M10.097,12.207c-0.903,0-1.635,0.724-1.635,1.62c0,0.895,0.731,1.62,1.635,1.62
 			c0.903,0,1.635-0.724,1.635-1.62C11.732,12.931,11.001,12.207,10.097,12.207L10.097,12.207z M1.926,4.108v19.437H3.56V5.728
-			h21.245v-1.62H1.926z M1.926,4.108"/>
+			h21.245v-1.62H1.926z M1.926,4.108" />
 		</symbol>
-		
+
 		<symbol id="ico-left-arrow" viewbox="0 0 30 30">
-			<path d="M19.066,3l2.818,2.823l-9.249,9.268l9.249,9.266l-2.818,2.826L7,15.091L19.066,3z M19.066,3"/>
+			<path d="M19.066,3l2.818,2.823l-9.249,9.268l9.249,9.266l-2.818,2.826L7,15.091L19.066,3z M19.066,3" />
 		</symbol>
-		
+
 		<symbol id="ico-profile-nav" viewbox="0 0 30 30">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M5.827,13.207c-1.266,0-2.293,1.027-2.293,2.293
 				c0,1.266,1.027,2.293,2.293,2.293c1.267,0,2.294-1.027,2.294-2.293C8.12,14.233,7.094,13.207,5.827,13.207z M15,13.207
 				c-1.267,0-2.293,1.027-2.293,2.293c0,1.266,1.026,2.293,2.293,2.293c1.266,0,2.293-1.027,2.293-2.293
 				C17.294,14.233,16.267,13.207,15,13.207z M24.173,13.207c-1.267,0-2.293,1.027-2.293,2.293c0,1.266,1.026,2.293,2.293,2.293
-				c1.266,0,2.293-1.027,2.293-2.293C26.466,14.233,25.44,13.207,24.173,13.207z"/>
+				c1.266,0,2.293-1.027,2.293-2.293C26.466,14.233,25.44,13.207,24.173,13.207z" />
 		</symbol>
-		
+
 		<symbol id="ico-smile" viewbox="0 0 30 30">
-		    <path d="M15,3C8.364,3,2.929,8.435,2.929,15.071c0,6.636,5.435,12.071,12.071,12.071c6.636,0,12.071-5.435,12.071-12.071
+			<path d="M15,3C8.364,3,2.929,8.435,2.929,15.071c0,6.636,5.435,12.071,12.071,12.071c6.636,0,12.071-5.435,12.071-12.071
 			C27.071,8.435,21.636,3,15,3L15,3z M19.226,10.244c0.966,0,1.809,0.842,1.809,1.809c0,0.967-0.844,1.809-1.809,1.809
 			c-0.967,0-1.809-0.842-1.809-1.809C17.417,11.086,18.259,10.244,19.226,10.244L19.226,10.244z M10.773,10.244
 			c0.967,0,1.81,0.842,1.81,1.809c0,0.967-0.842,1.809-1.81,1.809c-0.965,0-1.809-0.842-1.809-1.809
 			C8.964,11.086,9.808,10.244,10.773,10.244L10.773,10.244z M15,22.315c-3.135,0-5.794-2.052-6.76-4.827h13.52
-			C20.794,20.263,18.135,22.315,15,22.315L15,22.315z M15,22.315"/>
+			C20.794,20.263,18.135,22.315,15,22.315L15,22.315z M15,22.315" />
 		</symbol>
 		<symbol id="ico-send" viewbox="0 0 30 30">
-			<path clip-path="url(#SVGID_2_)" d="M2.52,26.077l25.762-11.038L2.52,4v8.59l18.4,2.449l-18.4,2.456V26.077z M2.52,26.077"/>
+			<path clip-path="url(#SVGID_2_)" d="M2.52,26.077l25.762-11.038L2.52,4v8.59l18.4,2.449l-18.4,2.456V26.077z M2.52,26.077" />
 		</symbol>
-		
+
 	</svg>
 	<!-- SVG Library END -->
 
 	<div class="wrapper-mob">
 
 		<header class="header-mob">
-			<button class="btn-header_nav"></button>
+			<button type="button" class="btn-header_nav"></button>
 			<div class="header-mob_title"><span>Letters</span></div>
 			<a href="#" class="btn-header_chat">
-				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-header-chat"></use></svg>
+				<svg>
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-header-chat"></use>
+				</svg>
 			</a>
 			<div class="btn-header-mob_chat"></div>
 		</header>
@@ -272,7 +275,9 @@
 		-->
 
 			<div class="btn-close-sidebar">
-				<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
+				<svg>
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use>
+				</svg>
 			</div>
 
 			<div class="sidebar-top">
@@ -281,101 +286,107 @@
 
 				<div class="sidebar-user-wrap">
 					<a href="#" class="sidebar-user-photo">
-					<img src="img/profile-man.png" alt="Profile photo">
-					
-					<span href="#" class="sidebar-user-settings">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-ico"></use></svg>
-					</span>
-					
-					<div class="sidebar-user_balance">
-						<span>20</span>
-						<i class="active">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-balance-sidebar"></use></svg>
-						</i>
-					</div>
-				</a>
+						<span class="avatar_photo-cover">
+							<img src="img/profile-man.png" alt="Profile photo">
+						</span>
+
+
+						<span href="#" class="sidebar-user-settings">
+							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-ico"></use></svg>
+						</span>
+
+						<div class="sidebar-user_balance">
+							<span>20</span>
+							<i class="active">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-balance-sidebar"></use></svg>
+							</i>
+						</div>
+					</a>
 					<a href="#" class="sidebar_user-name">Alexander</a>
 				</div>
+				
+				<nav class="sidebar-nav">
+
+					<ul>
+						<li>
+							<a href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-female"></use></svg>
+								</span>
+								<span>Woman profiles</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-letter"></use></svg>
+								</span>
+								<span>Letters</span>
+								<strong class="sidebar-nav_notification">221</strong>
+							</a>
+						</li>
+
+						<li class="sidebar-dropdown">
+							<a class="sidebar-dropdown" href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-nav"></use></svg>
+								</span>
+								<span>Matchmaking</span>
+								<strong class="sidebar-dropdown-ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
+								</strong>
+							</a>
+							<ul class="sidebar-nav_dropdown">
+								<li><a href="#">Matchmaking Coaching</a></li>
+								<li><a href="#">Matchmaking Tours</a></li>
+								<li><a href="#">Personal Matchmaking</a></li>
+							</ul>
+						</li>
+
+						<li class="sidebar-dropdown">
+							<a href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-info"></use></svg>
+								</span>
+								<span>Information</span>
+								<strong class="sidebar-dropdown-ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
+								</strong>
+							</a>
+
+							<ul class="sidebar-nav_dropdown">
+								<li><a href="#">Support</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-coins-nav"></use></svg>
+								</span>
+								<span>Purchase coins</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="sidebar-nav_ico">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-blog"></use></svg>
+								</span>
+								<span>Blog</span>
+							</a>
+						</li>
+
+					</ul>
+				</nav>
+
+				
 			</div>
 
-			<nav class="sidebar-nav">
-
-				<ul>
-					<li>
-						<a href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-female"></use></svg>
-						</span>
-						<span>Woman profiles</span>
-					</a>
-					</li>
-
-					<li>
-						<a href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-letter"></use></svg>
-						</span>
-						<span>Letters</span>
-						<strong class="sidebar-nav_notification">221</strong>
-					</a>
-					</li>
-
-					<li class="sidebar-dropdown">
-						<a class="sidebar-dropdown" href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-nav"></use></svg>
-						</span>
-						<span>Matchmaking</span>
-						<strong class="sidebar-dropdown-ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
-						</strong>
-					</a>
-						<ul class="sidebar-nav_dropdown">
-							<li><a href="#">Matchmaking Coaching</a></li>
-							<li><a href="#">Matchmaking Tours</a></li>
-							<li><a href="#">Personal Matchmaking</a></li>
-						</ul>
-					</li>
-
-					<li class="sidebar-dropdown">
-						<a href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-info"></use></svg>
-						</span>
-						<span>Information</span>
-						<strong class="sidebar-dropdown-ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
-						</strong>
-					</a>
-
-						<ul class="sidebar-nav_dropdown">
-							<li><a href="#">Support</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Blog</a></li>
-						</ul>
-
-					</li>
-
-					<li>
-						<a href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-coins-nav"></use></svg>
-						</span>
-						<span>Purchase coins</span>
-					</a>
-					</li>
-
-					<li>
-						<a href="#">
-						<span class="sidebar-nav_ico">
-							<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-blog"></use></svg>
-						</span>
-						<span>Blog</span>
-					</a>
-					</li>
-
-				</ul>
-			</nav>
 
 			<div class="sidebar-footer">
 				<ul class="sidebar-footer_nav">
@@ -386,20 +397,26 @@
 				<ul class="sidebar-footer_social">
 					<li>
 						<a href="https://www.facebook.com/ukrainianrealbrides">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-facebook"></use></svg>
-					</a>
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-facebook"></use>
+							</svg>
+						</a>
 					</li>
 
 					<li>
 						<a href="https://www.instagram.com/ukrainianrealbrides">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-instagram"></use></svg>
-					</a>
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-instagram"></use>
+							</svg>
+						</a>
 					</li>
 
 					<li>
 						<a href="https://www.instagram.com/ukrainianrealbrides">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-youtube"></use></svg>
-					</a>
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-youtube"></use>
+							</svg>
+						</a>
 					</li>
 
 
@@ -418,8 +435,8 @@
 				<div class="letters-list">
 
 					<div class="message-mob_nav">
-						<button class="btn-message-nav">New</button>
-						<button class="btn-message-nav active">Inbox</button>
+						<button type="button" class="btn-message-nav">New</button>
+						<button type="button" class="btn-message-nav active">Inbox</button>
 					</div>
 
 
@@ -427,17 +444,21 @@
 						<div class="message-list_row">
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
 									<div class="message-list_status online">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-								<span class="message-list_title">Alexandra, 24</span>
-								<span class="message-list_subtitle">ID 31</span>
-								<span class="message-list_city">Ukraine, Kharkiv</span>
-							</a>
+									<span class="message-list_title">Alexandra, 24</span>
+									<span class="message-list_subtitle">ID 31</span>
+									<span class="message-list_city">Ukraine, Kharkiv</span>
+								</a>
 
 							</div>
 
@@ -464,17 +485,21 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Lviv</span>
+								</a>
 
 							</div>
 
@@ -501,17 +526,21 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Lviv</span>
+								</a>
 
 							</div>
 
@@ -538,17 +567,62 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Lviv</span>
+								</a>
+
+							</div>
+
+
+							<div class="message-list_right">
+								<div class="message-list_right-top">
+									<div class="message-list_notification"><span>99</span></div>
+								</div>
+
+								<div class="message-list_right-bottom">
+									<span>01 nov 2017</span>
+									<i class="attachment-ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
+									</i>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div class="message-list_row-wrap">
+						<div class="message-list_row">
+
+							<div class="message-list_left">
+								<div class="message-list_photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
+									</div>
+								</div>
+
+								<a href="#" class="message-list_middle">
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Lviv</span>
+								</a>
 
 							</div>
 
@@ -575,17 +649,21 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Lviv</span>
+								</a>
 
 							</div>
 
@@ -598,8 +676,8 @@
 								<div class="message-list_right-bottom">
 									<span>01 nov 2017</span>
 									<i class="attachment-ico">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
-							</i>
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
+									</i>
 								</div>
 
 							</div>
@@ -612,54 +690,21 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-								<span class="message-list_title">Alexandra, 35</span>
-								<span class="message-list_subtitle">ID 98</span>
-								<span class="message-list_city">Ukraine, Lviv</span>
-							</a>
-
-							</div>
-
-
-							<div class="message-list_right">
-								<div class="message-list_right-top">
-									<div class="message-list_notification"><span>99</span></div>
-								</div>
-
-								<div class="message-list_right-bottom">
-									<span>01 nov 2017</span>
-									<i class="attachment-ico">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
-							</i>
-								</div>
-
-							</div>
-
-						</div>
-					</div>
-
-					<div class="message-list_row-wrap">
-						<div class="message-list_row">
-
-							<div class="message-list_left">
-								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
-									</div>
-								</div>
-
-								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Kharkiv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Kharkiv</span>
+								</a>
 
 							</div>
 
@@ -668,7 +713,7 @@
 								<div class="message-list_right-top">
 									<div class="message-list_notification active"><span>99</span></div>
 									<!--							
-							<button class="message-list_delete">
+							<button type="button" class="message-list_delete">
 								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use></svg>
 							</button>
 							-->
@@ -691,17 +736,21 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
-									<div class="message-list_status">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
+									<div class="message-list_status online">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
 								<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Kharkiv</span>
-						</a>
+									<span class="message-list_title">Alexandra, 35</span>
+									<span class="message-list_subtitle">ID 98</span>
+									<span class="message-list_city">Ukraine, Kharkiv</span>
+								</a>
 
 							</div>
 
@@ -732,17 +781,21 @@
 
 						<div class="message-list_left">
 							<div class="message-list_photo">
-								<img src="img/profile-women.png" alt="Message profile photo">
-								<div class="message-list_status">
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+								<div class="avatar_photo-cover">
+									<img src="img/profile-women.png" alt="Message profile photo">
+								</div>
+								<div class="message-list_status online">
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+									</svg>
 								</div>
 							</div>
 
 							<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+								<span class="message-list_title">Alexandra, 35</span>
+								<span class="message-list_subtitle">ID 98</span>
+								<span class="message-list_city">Ukraine, Lviv</span>
+							</a>
 
 						</div>
 
@@ -750,30 +803,32 @@
 						<div class="message-list_right">
 							<div class="message-list_right-top">
 								<div class="message-header_nav">
-									<button class="message-header_nav-btn">
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use></svg>
-								</button>
+									<button type="button" class="message-header_nav-btn">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use>
+										</svg>
+									</button>
 									<ul class="message-header_nav-drop">
 										<li>
 											<a href="#">
-                                                <span class="ico-profile-nav ico-gift"></span>
-                                                <span class="nav-profile_title">Send Gift</span>
-                                            </a>
+												<span class="ico-profile-nav ico-gift"></span>
+												<span class="nav-profile_title">Send Gift</span>
+											</a>
 										</li>
 
 										<li>
 
 											<a href="#">
-                                                <span class="ico-profile-nav ico-sticker"></span>
-                                                <span class="nav-profile_title">Send a Sticker</span>
-                                            </a>
+												<span class="ico-profile-nav ico-sticker"></span>
+												<span class="nav-profile_title">Send a Sticker</span>
+											</a>
 
 										</li>
 										<li>
 											<a href="#">
-                                                <span class="ico-profile-nav ico-video"></span>
-                                                <span class="nav-profile_title">Video chat</span>
-                                            </a>
+												<span class="ico-profile-nav ico-video"></span>
+												<span class="nav-profile_title">Video chat</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -791,9 +846,13 @@
 
 						<div class="letter-content_sent">
 							<div class="message-list_photo">
-								<img src="img/profile-man.png" alt="Message profile photo">
+								<div class="avatar_photo-cover">
+									<img src="img/profile-man.png" alt="Message profile photo">
+								</div>
 								<div class="message-list_status online">
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+									</svg>
 								</div>
 							</div>
 
@@ -809,9 +868,13 @@
 						<div class="letter_inbox">
 							<div class="letter-inbox_header">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
 									<div class="message-list_status online">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 								<div class="letter-inbox_header-right">
@@ -832,14 +895,20 @@
 					<div class="input-message-field">
 						<textarea rows="1" colls="1" class="message-input" type="text" placeholder="Write your message"></textarea>
 						<div class="letter-field_right">
-							<button class="letter-message_button btn-send">
-				            	<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use></svg>
-				        	</button>
-							<button class="letter-message_button">
-				            	<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use></svg>
+							<button type="button" class="letter-message_button btn-send">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use>
+								</svg>
 							</button>
-							<button class="letter-message_button">
-								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use></svg>
+							<button type="button" class="letter-message_button">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use>
+								</svg>
+							</button>
+							<button type="button" class="letter-message_button">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-attachment"></use>
+								</svg>
 							</button>
 						</div>
 					</div>
@@ -853,18 +922,22 @@
 				<!--chat dialogs list-->
 				<div class="chat-dialog-list">
 					<div class="message-mob_nav">
-						<button class="btn-message-nav active">Online</button>
-						<button class="btn-message-nav">Favorites</button>
-						<button class="btn-message-nav">History</button>
+						<button type="button" class="btn-message-nav active">Online</button>
+						<button type="button" class="btn-message-nav">Favorites</button>
+						<button type="button" class="btn-message-nav">History</button>
 					</div>
 
 					<div class="message-list_row-wrap">
 						<div class="message-list_row">
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
 									<div class="message-list_status online">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
@@ -886,7 +959,7 @@
 
 							</div>
 						</div>
-						<button class="btn-chat btn-chat_absolute">Start chat</button>
+						<button type="button" class="btn-chat btn-chat_absolute">Start chat</button>
 					</div>
 
 					<div class="message-list_row-wrap">
@@ -894,9 +967,13 @@
 
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
 									<div class="message-list_status online">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
@@ -920,16 +997,20 @@
 							</div>
 
 						</div>
-						<button class="btn-chat btn-chat_absolute cancel-chat">Cancel request</button>
+						<button type="button" class="btn-chat btn-chat_absolute cancel-chat">Cancel request</button>
 					</div>
 
 					<div class="message-list_row-wrap">
 						<div class="message-list_row">
 							<div class="message-list_left">
 								<div class="message-list_photo">
-									<img src="img/profile-women.png" alt="Message profile photo">
+									<div class="avatar_photo-cover">
+										<img src="img/profile-women.png" alt="Message profile photo">
+									</div>
 									<div class="message-list_status online">
-										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+										</svg>
 									</div>
 								</div>
 
@@ -951,28 +1032,32 @@
 
 							</div>
 						</div>
-						<button class="btn-chat btn-chat_absolute">Start chat</button>
+						<button type="button" class="btn-chat btn-chat_absolute">Start chat</button>
 					</div>
 
 				</div>
-				
+
 				<!--chat dialog opened-->
 				<div class="chat-dialog">
 					<div class="message-header chat-header">
 
 						<div class="message-list_left">
 							<div class="message-list_photo">
-								<img src="img/profile-women.png" alt="Message profile photo">
-								<div class="message-list_status">
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+								<div class="avatar_photo-cover">
+									<img src="img/profile-women.png" alt="Message profile photo">
+								</div>
+								<div class="message-list_status online">
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+									</svg>
 								</div>
 							</div>
 
 							<a href="#" class="message-list_middle">
-							<span class="message-list_title">Alexandra, 35</span>
-							<span class="message-list_subtitle">ID 98</span>
-							<span class="message-list_city">Ukraine, Lviv</span>
-						</a>
+								<span class="message-list_title">Alexandra, 35</span>
+								<span class="message-list_subtitle">ID 98</span>
+								<span class="message-list_city">Ukraine, Lviv</span>
+							</a>
 
 						</div>
 
@@ -980,30 +1065,32 @@
 						<div class="message-list_right">
 							<div class="message-list_right-top">
 								<div class="message-header_nav">
-									<button class="message-header_nav-btn">
-									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use></svg>
-								</button>
+									<button type="button" class="message-header_nav-btn">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use>
+										</svg>
+									</button>
 									<ul class="message-header_nav-drop">
 										<li>
 											<a href="#">
-                                                <span class="ico-profile-nav ico-gift"></span>
-                                                <span class="nav-profile_title">Send Gift</span>
-                                            </a>
+												<span class="ico-profile-nav ico-gift"></span>
+												<span class="nav-profile_title">Send Gift</span>
+											</a>
 										</li>
 
 										<li>
 
 											<a href="#">
-                                                <span class="ico-profile-nav ico-sticker"></span>
-                                                <span class="nav-profile_title">Send a Sticker</span>
-                                            </a>
+												<span class="ico-profile-nav ico-sticker"></span>
+												<span class="nav-profile_title">Send a Sticker</span>
+											</a>
 
 										</li>
 										<li>
 											<a href="#">
-                                                <span class="ico-profile-nav ico-video"></span>
-                                                <span class="nav-profile_title">Video chat</span>
-                                            </a>
+												<span class="ico-profile-nav ico-video"></span>
+												<span class="nav-profile_title">Video chat</span>
+											</a>
 										</li>
 									</ul>
 								</div>
@@ -1052,12 +1139,16 @@
 					<div class="input-message-field">
 						<input class="message-input" type="text" placeholder="Write your message">
 						<div class="letter-field_right">
-							<button class="letter-message_button btn-send">
-				            	<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use></svg>
-				        	</button>
-							<button class="letter-message_button">
-				            	<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use></svg>
-				        	</button>
+							<button type="button" class="letter-message_button btn-send">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use>
+								</svg>
+							</button>
+							<button type="button" class="letter-message_button">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
 
@@ -1065,6 +1156,116 @@
 			</div>
 
 		</main>
+
+		<section class="notifications-row">
+			<div class="notifications-slider">
+
+				<!--invite to chat notification-->
+				<div class="notification-cover notification-invitation">
+					<div class="notification-image">
+						<div class="notification-image_hold">
+							<img src="img/profile-woman_2.jpg" alt="Profile photo">
+						</div>
+						<div class="message-list_status online">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="notification_new-message">
+						<div class="notification-content">
+							<div class="notification-content_top">
+								<strong class="notification_title">Olga, 24</strong>
+								<div class="notification-content_top-right">
+									<button type="button" class="notification-button">Accept</button>
+								</div>
+							</div>
+							<div class="notification-content_bottom">
+								<div class="notification-content_bottom-left">
+									<p class="notification_text">Hello!What do you like in women most of all ?</p>
+								</div>
+								<div class="notification-content_bottom-right">
+									<a class="btn-notification-decline">Decline</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--new message notification-->
+				<div class="notification-cover">
+					<div class="notification-image">
+						<div class="notification-image_hold">
+							<img src="img/profile-woman_2.jpg" alt="Profile photo">
+						</div>
+						<div class="message-list_status online">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="notification_new-message">
+						<div class="notification-content">
+							<div class="notification-content_top">
+								<strong class="notification_title">New chat message!</strong>
+								<button type="button" class="btn-close-notification">
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="notification-content_bottom">
+								<div class="notification-content_bottom-left">
+									<span class="notification_name">Olga, 24</span>
+									<p class="notification_text">Hello! What do you ...</p>
+								</div>
+								<div class="notification-content_bottom-right">
+									<button type="button" class="notification-button">Read message</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="notification-cover">
+					<div class="notification-image">
+						<div class="notification-image_hold">
+							<img src="img/profile-woman_2.jpg" alt="Profile photo">
+						</div>
+						<div class="message-list_status online">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="notification_new-message">
+						<div class="notification-content">
+							<div class="notification-content_top">
+								<strong class="notification_title">New chat message!</strong>
+								<button type="button" class="btn-close-notification">
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="notification-content_bottom">
+								<div class="notification-content_bottom-left">
+									<span class="notification_name">Olga, 24</span>
+									<p class="notification_text">Hello! What do you ...</p>
+								</div>
+								<div class="notification-content_bottom-right">
+									<button type="button" class="notification-button">Read message</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</section>
 
 	<!--
 	<footer class="footer-mob">
@@ -1079,7 +1280,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
-
+	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

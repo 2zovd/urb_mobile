@@ -96,5 +96,14 @@ $(document).ready(function() {
 		$('.sidebar').addClass('logged-out');
 	});
 	
+	// slick carousel
+	$(".notifications-slider").slick({
+		arrows: false,
+		infinite: false,
+		focusOnSelect: true,
+		slidesToShow: 1,
+		variableWidth: true
+	});
+	
 });
 

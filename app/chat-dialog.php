@@ -7,17 +7,21 @@
 
 			<div class="message-list_left">
 				<div class="message-list_photo">
-					<img src="img/profile-women.png" alt="Message profile photo">
-					<div class="message-list_status">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+					<div class="avatar_photo-cover">
+						<img src="img/profile-women.png" alt="Message profile photo">
+					</div>
+					<div class="message-list_status online">
+						<svg>
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
+						</svg>
 					</div>
 				</div>
 
 				<a href="#" class="message-list_middle">
-				<span class="message-list_title">Alexandra, 35</span>
-				<span class="message-list_subtitle">ID 98</span>
-				<span class="message-list_city">Ukraine, Lviv</span>
-			</a>
+					<span class="message-list_title">Alexandra, 35</span>
+					<span class="message-list_subtitle">ID 98</span>
+					<span class="message-list_city">Ukraine, Lviv</span>
+				</a>
 
 			</div>
 
@@ -25,9 +29,11 @@
 			<div class="message-list_right">
 				<div class="message-list_right-top">
 					<div class="message-header_nav">
-						<button class="message-header_nav-btn">
-						<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use></svg>
-					</button>
+						<button type="button" class="message-header_nav-btn">
+							<svg>
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use>
+							</svg>
+						</button>
 						<ul class="message-header_nav-drop">
 							<li>
 								<a href="#">
@@ -97,15 +103,19 @@
 		<div class="input-message-field">
 			<input class="message-input" type="text" placeholder="Write your message">
 			<div class="letter-field_right">
-				<button class="letter-message_button btn-send">
-					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use></svg>
+				<button type="button" class="letter-message_button btn-send">
+					<svg>
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use>
+					</svg>
 				</button>
-				<button class="letter-message_button">
-					<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use></svg>
+				<button type="button" class="letter-message_button">
+					<svg>
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use>
+					</svg>
 				</button>
 			</div>
 		</div>
 
-</div>
-
+	</div>
+	
 </div>
