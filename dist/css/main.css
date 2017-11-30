@@ -58,7 +58,8 @@ html {
 html,
 body,
 .wrapper-mob,
-.main-mob {
+.main-mob,
+.main-content {
   min-height: 100%; }
 
 svg {
@@ -1377,3 +1378,36 @@ body {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   text-decoration: underline; }
+
+.main-content {
+  padding: 2.5rem 2rem 3rem; }
+
+.content-heading {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500; }
+
+.content-subheading {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #757575;
+  padding: 0 1.4rem; }
+
+.content-heading_wrap {
+  max-width: 24rem;
+  margin: 0 auto 3rem; }
+
+.stickers-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
