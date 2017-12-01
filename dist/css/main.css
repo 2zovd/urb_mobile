@@ -611,6 +611,14 @@ body {
   position: absolute;
   right: 2rem;
   bottom: 2rem; }
+  .btn-chat_absolute.decline {
+    right: 2rem;
+    bottom: auto;
+    top: 2rem;
+    border-color: transparent;
+    background-color: transparent;
+    color: #8a8a8a;
+    text-decoration: underline; }
 
 .message-list_photo {
   position: relative;
@@ -1116,11 +1124,17 @@ body {
   -webkit-border-radius: 0.6rem;
           border-radius: 0.6rem;
   cursor: pointer;
+  background-color: transparent;
   border-color: #efb8bc;
   color: #ea4c58; }
   .btn-chat.cancel-chat {
     border-color: #c9c9c9;
-    color: #9d9d9d; }
+    background-color: #fff;
+    color: #8a8a8a; }
+  .btn-chat.stop-chat {
+    border-color: #efb8bc;
+    background-color: #ea4c58;
+    color: #fff; }
 
 .chat-mob {
   height: 100%; }
