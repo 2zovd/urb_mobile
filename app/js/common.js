@@ -107,3 +107,8 @@ $(document).ready(function() {
 	
 });
 
+
+$(window).on('load', function() {
+	$('.page-preloader_wrapper').delay(1000).fadeOut('slow');
+});
+

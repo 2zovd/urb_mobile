@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Mobile URB</title>
+	<title>Chat list</title>
 
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,14 @@
 </head>
 
 <body>
+
+	<div class="page-preloader_wrapper">
+		<div class="page-preloader">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+
 	<!-- SVG Library -->
 	<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 
@@ -251,7 +259,7 @@
 	</svg>
 	<!-- SVG Library END -->
 
-	<div class="wrapper-mob">
+	<div class="wrapper-mob footer-fixed">
 
 		<header class="header-mob">
 			<button type="button" class="btn-header_nav"></button>
@@ -388,7 +396,7 @@
 			</div>
 
 
-			<div class="sidebar-footer">
+			<div class="sidebar-footer fixed">
 				<ul class="sidebar-footer_nav">
 					<li><a href="#">Contact Us</a></li>
 					<li><a class="btn-log-out" href="#">Log out</a></li>
@@ -437,7 +445,10 @@
 						<button type="button" class="btn-message-nav">Favorites</button>
 						<button type="button" class="btn-message-nav">History</button>
 					</div>
-
+					
+					<div class="empty-dialog-list"><p>Unfortunately you don't have active chats yet.</p></div>
+					
+					<!--
 					<div class="message-list_row-wrap">
 						<div class="message-list_row">
 							<div class="message-list_left">
@@ -511,7 +522,6 @@
 						<button type="button" class="btn-chat btn-chat_absolute cancel-chat">Cancel request</button>
 					</div>
 				
-				
 					<div class="message-list_row-wrap">
 						<div class="message-list_row">
 							<div class="message-list_left">
@@ -547,133 +557,16 @@
 						<button type="button" class="btn-chat btn-chat_absolute decline">Decline</button>
 						<button type="button" class="btn-chat btn-chat_absolute">Accept</button>
 					</div>
+					-->
 
 				</div>
 
-				<!--chat dialog opened-->
-				<div class="chat-dialog">
-					<div class="message-header chat-header">
-
-						<div class="message-list_left">
-							<div class="message-list_photo">
-								<div class="avatar_photo-cover">
-									<img src="img/profile-women.png" alt="Message profile photo">
-								</div>
-								<div class="message-list_status online">
-									<svg>
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use>
-									</svg>
-								</div>
-							</div>
-
-							<a href="#" class="message-list_middle">
-								<span class="message-list_title">Alexandra, 35</span>
-								<span class="message-list_subtitle">ID 98</span>
-								<span class="message-list_city">Ukraine, Lviv</span>
-							</a>
-
-						</div>
-
-
-						<div class="message-list_right">
-							<div class="message-list_right-top">
-								<div class="message-header_nav">
-									<button type="button" class="message-header_nav-btn">
-										<svg>
-											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-profile-nav"></use>
-										</svg>
-									</button>
-									<ul class="message-header_nav-drop">
-										<li>
-											<a href="#">
-												<span class="ico-profile-nav ico-gift"></span>
-												<span class="nav-profile_title">Send Gift</span>
-											</a>
-										</li>
-
-										<li>
-
-											<a href="#">
-												<span class="ico-profile-nav ico-sticker"></span>
-												<span class="nav-profile_title">Send a Sticker</span>
-											</a>
-
-										</li>
-										<li>
-											<a href="#">
-												<span class="ico-profile-nav ico-video"></span>
-												<span class="nav-profile_title">Video chat</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="message-content">
-						<div class="chat-dialog_row chat-recieved">
-							<div class="chat-dialog_message">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra felis et est ultrices feugiat.</p>
-								<span>19:25</span>
-							</div>
-						</div>
-
-						<div class="chat-dialog_row chat-sent">
-							<div class="chat-dialog_message">
-								<p>Lorem ipsum dolor sit amet</p>
-								<span>19:25</span>
-							</div>
-						</div>
-
-						<div class="chat-dialog_row chat-recieved">
-							<div class="chat-dialog_message">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra felis et est ultrices feugiat.</p>
-								<span>19:25</span>
-							</div>
-						</div>
-
-						<div class="chat-dialog_row chat-sent">
-							<div class="chat-dialog_message">
-								<p>Lorem ipsum dolor sit amet</p>
-								<span>19:25</span>
-							</div>
-						</div>
-
-						<div class="chat-dialog_row chat-sent">
-							<div class="chat-dialog_message">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra felis et est ultrices feugiat.</p>
-								<span>19:25</span>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="input-message-field">
-						<input class="message-input" type="text" placeholder="Write your message">
-						<div class="letter-field_right">
-							<button type="button" class="letter-message_button btn-send">
-								<svg>
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-send"></use>
-								</svg>
-							</button>
-							<button type="button" class="letter-message_button">
-								<svg>
-									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-smile"></use>
-								</svg>
-							</button>
-						</div>
-					</div>
-
-				</div>
 			</div>
 
 		</main>
-
-		<section class="notifications-row">
+		
+		<!--<section class="notifications-row">
 			<div class="notifications-slider">
-
-				<!--invite to chat notification-->
 				<div class="notification-cover notification-invitation">
 					<div class="notification-image">
 						<div class="notification-image_hold">
@@ -705,7 +598,6 @@
 
 					</div>
 				</div>
-				<!--new message notification-->
 				<div class="notification-cover">
 					<div class="notification-image">
 						<div class="notification-image_hold">
@@ -740,7 +632,6 @@
 
 					</div>
 				</div>
-
 				<div class="notification-cover">
 					<div class="notification-image">
 						<div class="notification-image_hold">
@@ -775,19 +666,17 @@
 
 					</div>
 				</div>
-
-
 			</div>
-		</section>
+		</section>-->
+		
 
-	<!--
 	<footer class="footer-mob">
 		<a href="#" class="footer-mob_logo">
 			<img src="img/logo-mob.png" alt="Ukrainian real brides">
 		</a>
 		<p>Ukrainian Real Brides 2015-2017 © All rights reserved.</p>
 	</footer>
-	-->
+
 
 	</div>
 
