@@ -112,3 +112,8 @@ $(window).on('load', function() {
 	$('.page-preloader_wrapper').delay(1000).fadeOut('slow');
 });
 
+$(window).on('load', function() {
+	$('.page-preloader_wrapper-2').delay(1000).fadeOut('slow');
+});
+
+
