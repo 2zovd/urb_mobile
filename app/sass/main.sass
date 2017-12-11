@@ -143,6 +143,9 @@ body
 	span
 		display: inline-block
 		line-height: 1.5rem
+	&>a
+		display: flex
+		align-items: center
 	
 
 .btn-header_chat
@@ -563,6 +566,9 @@ body
 	color: #a0a0a0
 	font-weight: $regular
 	font-size: 1.4rem
+	max-width: 11.5rem
+	@include rwd(410)
+		max-width: 100%
 
 .message-list_delete
 	width: 1.3rem
@@ -851,6 +857,7 @@ body
 	&.btn-send
 		pointer-events: none
 		&.active
+			pointer-events: auto
 			fill: $red
     
 .btn-chat
