@@ -115,6 +115,8 @@
 	min-height: 4rem
 	width: 100%
 	margin-bottom: 1rem
+	font-weight: $medium
+	font-family: $main-font
 	
 .homepage-intro
 	margin-bottom: 3rem
@@ -157,6 +159,8 @@
 	font-size: 1.4rem
 	line-height: 1.5
 	margin-bottom: 1.5rem
+
+.homepage_paragraph-holder
 	position: relative
 	&:after
 		content: ''
@@ -164,7 +168,7 @@
 		bottom: 0
 		left: 0
 		width: 100%
-		height: 8rem
+		height: 10rem
 		background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0))
 	
 .btn-custom-big
@@ -186,4 +190,44 @@
 	margin-bottom: 1.5rem
 
 .homepage-content_row
-	margin-bottom: 1.5rem
+	margin-bottom: 3rem
+
+.content-banner
+	background-image: url('../img/homepage/main-banner.jpg')
+	background-size: cover
+	background-position: 43% 0
+	background-repeat: no-repeat
+	min-height: 16.5rem
+	position: relative
+	p
+		display: block
+		color: #fff
+		font-size: 1.6rem
+		line-height: 1.5
+		font-weight: $bold
+		margin-bottom: 2rem
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		width: 100%
+		height: 100%
+		background-color: rgba(180,177,210,.8)
+	button
+		margin-bottom: 0
+
+.content-banner_inner
+	position: relative
+	z-index: 2
+	padding: 3.3rem 6rem
+
+.homepage-paragraph
+	border-bottom: 1px solid #dbdbdb
+	padding-bottom: 1.5rem
+	margin-bottom: 3rem
+
+
+
+	
