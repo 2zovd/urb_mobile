@@ -1,5 +1,7 @@
 .homepage
 	height: 100%
+	max-width: 1024px
+	margin: 0 auto
 
 .btn-header
 	line-height: 2.4rem
@@ -65,15 +67,21 @@
 	display: flex
 	align-items: center
 	padding: 0.5rem 1.5rem
-
+	
 .auth-buttons
 	margin-bottom: 0.6rem
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
 	i
 		display: inline-block
 		margin-right: 3.8rem
 		font-size: 2em
 	span
 		display: inline-block
+	@include sm
+		button
+			width: 49%
 		
 .auth-google
 	background-color: #d9413c
@@ -107,8 +115,6 @@
 
 .homepage-authorization
 	padding: 0 2.1rem
-	max-width: 50rem
-	margin: 0 auto
 	
 .btn-homepage
 	display: block
@@ -136,6 +142,10 @@
 		transform: translate(-50%,0)
 		width: 105%
 		height: auto
+	@include sm
+		max-width: 25rem
+		margin-left: 3rem
+		margin-right: 3rem
 	
 .content-container
 	padding: 0 3rem
@@ -193,6 +203,8 @@
 
 .homepage-content_row
 	margin-bottom: 3rem
+	&.tablet-columns
+		display: flex
 
 .content-banner
 	background-image: url('../img/homepage/main-banner.jpg')
