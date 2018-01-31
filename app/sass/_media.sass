@@ -1,3 +1,6 @@
+// Extra small devices
+$screen-xs-min: 350
+
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576
 
@@ -34,6 +37,11 @@ $screen-xl-min: 1200
 // Small devices
 @mixin sm
 	@media only screen and (min-width: $screen-sm-min +'px')
+		@content
+
+// Extra-small devices
+@mixin xs
+	@media only screen and (min-width: $screen-xs-min +'px')
 		@content
 
 
