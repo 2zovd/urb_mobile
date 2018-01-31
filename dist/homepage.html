@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body>
+		<!-- SVG Library -->
+		<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+			<symbol id="ico-header-chat" viewBox="0 0 30 30">
+				<path d="M12.611,8.686c-5.094,0-9.224,3.425-9.224,7.658c0,2.072,0.997,3.955,2.614,5.332c-0.098,1.405-0.41,3.126-1.318,4.053
+						 c1.81,0,3.653-1.219,4.824-2.177c0.97,0.293,2.017,0.45,3.105,0.45c5.094,0,9.224-3.433,9.224-7.658
+						 C21.835,12.111,17.704,8.686,12.611,8.686z M24.878,17.083c0.777-1.114,1.221-2.414,1.221-3.806c0-4.233-4.13-7.658-9.224-7.658
+						 c-2.246,0-4.304,0.666-5.899,1.765c0.749-0.149,1.54-0.232,2.351-0.232c5.481,0,9.93,3.77,9.93,8.42
+						 c0,1.832-0.687,3.53-1.858,4.914c1.166,0.957,3.016,2.182,4.824,2.182C24.934,21.354,24.844,18.431,24.878,17.083z" />
+			</symbol>
+
+			<symbol id="nav-close-ico" viewBox="0 0 30 30">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M29.268,2.371l-1.653-1.654L14.998,13.345L2.385,0.717L0.732,2.371L13.344,15
+																 L0.732,27.629l1.653,1.654l12.613-12.629l12.617,12.629l1.653-1.654L16.652,15L29.268,2.371z M29.268,2.371" />
+			</symbol>
+
+			<symbol id="settings-ico" viewBox="0 0 30 30">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M29.09,13.413c-0.045-0.399-0.509-0.698-0.911-0.698
+																 c-1.299,0-2.453-0.762-2.936-1.942c-0.494-1.208-0.176-2.616,0.793-3.504c0.305-0.278,0.342-0.745,0.087-1.069
+																 c-0.665-0.844-1.422-1.607-2.246-2.267c-0.324-0.259-0.798-0.223-1.078,0.087c-0.846,0.935-2.364,1.283-3.538,0.794
+																 c-1.221-0.513-1.991-1.75-1.915-3.077c0.025-0.417-0.28-0.779-0.696-0.828c-1.06-0.123-2.128-0.126-3.191-0.008
+																 c-0.411,0.045-0.716,0.399-0.702,0.811c0.046,1.314-0.733,2.529-1.942,3.023C9.654,5.21,8.146,4.865,7.303,3.937
+																 c-0.279-0.305-0.745-0.343-1.07-0.09C5.383,4.514,4.61,5.277,3.938,6.114C3.677,6.44,3.716,6.911,4.023,7.191
+																 c0.987,0.893,1.306,2.314,0.793,3.536c-0.49,1.165-1.7,1.915-3.085,1.915c-0.45-0.014-0.77,0.287-0.82,0.696
+																 c-0.124,1.064-0.126,2.149-0.006,3.222c0.044,0.4,0.523,0.697,0.93,0.697c1.235-0.032,2.421,0.732,2.918,1.942
+																 c0.496,1.208,0.176,2.615-0.793,3.504c-0.303,0.278-0.342,0.744-0.086,1.067c0.659,0.839,1.415,1.602,2.243,2.268
+																 c0.325,0.261,0.798,0.225,1.08-0.086c0.849-0.938,2.367-1.285,3.535-0.794c1.225,0.512,1.994,1.748,1.92,3.075
+																 c-0.025,0.417,0.281,0.781,0.695,0.828c0.542,0.063,1.087,0.095,1.634,0.095c0.519,0,1.038-0.028,1.557-0.086
+																 c0.411-0.045,0.716-0.4,0.702-0.812c-0.047-1.314,0.733-2.528,1.941-3.022c1.167-0.476,2.668-0.128,3.511,0.798
+																 c0.28,0.305,0.744,0.342,1.071,0.09c0.848-0.665,1.619-1.427,2.294-2.267c0.262-0.325,0.224-0.797-0.085-1.077
+																 c-0.987-0.893-1.307-2.314-0.794-3.535c0.482-1.149,1.647-1.921,2.901-1.921l0.175,0.005c0.407,0.033,0.781-0.28,0.83-0.695
+																 C29.209,15.57,29.21,14.486,29.09,13.413L29.09,13.413z M14.456,21.508c-3.918,0-5.98-2.903-5.98-6.512
+																 c0-3.609,2.934-6.545,6.542-6.545c3.607,0,6.542,2.936,6.542,6.545C21.559,18.605,18.374,21.508,14.456,21.508L14.456,21.508z
+																 M15.018,21.541" />
+			</symbol>
+
+			<symbol id="ico-balance-sidebar" viewBox="0 0 30 30">
+				<path d="M9.13,16.926c0.787,0,1.549-0.05,2.269-0.143V9.011c-0.72-0.093-1.482-0.143-2.269-0.143
+						 c-4.496,0-8.141,1.627-8.141,3.635v0.789C0.99,15.298,4.634,16.926,9.13,16.926z M9.13,20.984c0.787,0,1.549-0.05,2.269-0.143
+						 v-2.278c-0.72,0.093-1.482,0.144-2.269,0.144c-3.924,0-7.2-1.24-7.97-2.891c-0.112,0.24-0.171,0.49-0.171,0.744v0.788
+						 C0.99,19.356,4.634,20.984,9.13,20.984z M11.399,22.798v-0.177c-0.721,0.093-1.482,0.144-2.269,0.144
+						 c-3.924,0-7.2-1.24-7.97-2.89c-0.112,0.24-0.171,0.489-0.171,0.745v0.788c0,2.008,3.645,3.635,8.141,3.635
+						 c0.899,0,1.764-0.065,2.573-0.186c-0.201-0.404-0.304-0.829-0.304-1.27V22.798z M20.87,2.712c-4.497,0-8.142,1.627-8.142,3.635
+						 v0.789c0,2.008,3.645,3.635,8.142,3.635c4.496,0,8.141-1.627,8.141-3.635V6.346C29.01,4.339,25.365,2.712,20.87,2.712z
+						 M20.87,12.55c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.489-0.171,0.744v0.788c0,2.007,3.645,3.635,8.142,3.635
+						 c4.496,0,8.141-1.627,8.141-3.635v-0.788c0-0.255-0.059-0.504-0.172-0.744C28.07,11.311,24.794,12.55,20.87,12.55z
+						 M20.87,16.608c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.49-0.171,0.744v0.788c0,2.007,3.645,3.635,8.142,3.635
+						 c4.496,0,8.141-1.628,8.141-3.635v-0.788c0-0.255-0.059-0.504-0.172-0.744C28.07,15.369,24.794,16.608,20.87,16.608z
+						 M20.87,20.886c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.489-0.171,0.745v0.788c0,2.007,3.645,3.635,8.142,3.635
+						 c4.496,0,8.141-1.627,8.141-3.635V18.74c0-0.255-0.059-0.504-0.172-0.745C28.07,19.645,24.794,20.886,20.87,20.886z
+						 M20.87,24.944c-3.925,0-7.201-1.24-7.97-2.89c-0.112,0.24-0.171,0.49-0.171,0.744v0.788c0,2.007,3.645,3.635,8.142,3.635
+						 c4.496,0,8.141-1.627,8.141-3.635v-0.788c0-0.255-0.059-0.504-0.172-0.744C28.07,23.704,24.794,24.944,20.87,24.944z" />
+			</symbol>
+
+			<symbol id="ico-female" viewBox="0 0 30 30">
+				<path d="M2.754,24.143l-1.275,1.269c-0.425,0.423-0.425,1.058,0,1.481l1.487,1.481c0.427,0.424,1.058,0.424,1.484,0l1.275-1.269
+						 c0.212-0.211,0.534-0.211,0.741,0l1.275,1.269c0.425,0.424,1.064,0.424,1.489,0l1.488-1.481c0.426-0.423,0.426-1.058,0-1.481
+						 l-1.275-1.269c-0.212-0.206-0.212-0.526,0-0.737l0.638-0.635c0.212-0.211,0.425-0.211,0.637-0.103
+						 c2.334,1.475,5.201,2.111,8.282,1.584c4.78-0.845,8.705-4.757,9.452-9.51C29.728,6.815,22.929,0.051,14.855,1.32
+						 c-4.775,0.845-8.705,4.648-9.447,9.51c-0.534,3.065,0.212,5.918,1.696,8.24C7.214,19.282,7.214,19.603,7,19.706L6.363,20.34
+						 c-0.212,0.211-0.528,0.211-0.742,0L4.345,19.07c-0.424-0.417-1.062-0.417-1.488,0l-1.488,1.481c-0.419,0.424-0.419,1.058,0,1.481
+						 l1.276,1.269C2.966,23.617,2.966,24.04,2.754,24.143L2.754,24.143z M17.086,5.546c4.143,0,7.436,3.276,7.436,7.4
+						 c0,4.117-3.293,7.393-7.436,7.393c-4.137,0-7.431-3.276-7.431-7.393C9.655,8.822,12.948,5.546,17.086,5.546L17.086,5.546z
+						 M17.086,5.546" />
+			</symbol>
+
+			<symbol id="ico-letter" viewBox="0 0 30 30">
+				<path d="M29,22.25c0,0.564-0.169,1.087-0.44,1.547l-8.633-9.092l8.54-7.033C28.8,8.169,29,8.752,29,9.382V22.25z M15.327,16.356
+						 L27.211,6.57c-0.487-0.251-1.037-0.405-1.629-0.405H5.073c-0.594,0-1.142,0.154-1.628,0.405L15.327,16.356z M18.64,15.764
+						 l-2.751,2.267c-0.161,0.132-0.361,0.198-0.562,0.198c-0.201,0-0.401-0.066-0.562-0.198l-2.751-2.267l-8.743,9.208
+						 c0.524,0.309,1.139,0.495,1.803,0.495h20.508c0.664,0,1.279-0.185,1.802-0.495L18.64,15.764z M2.188,7.673
+						 C1.856,8.169,1.655,8.752,1.655,9.382V22.25c0,0.564,0.168,1.087,0.439,1.547l8.633-9.094L2.188,7.673z M2.188,7.673" />
+			</symbol>
+
+			<symbol id="ico-heart-nav" viewBox="0 0 30 30">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M14.991,7.655c-3.777-9.443-14.513-7.24-14.584,3.72c-0.039,6.02,5.112,8.27,8.542,10.676c3.326,2.334,5.693,5.526,6.064,6.885c0.317-1.331,2.954-4.614,6.033-6.95 c3.366-2.554,8.581-4.657,8.542-10.676C29.517,0.323,18.594-1.411,14.991,7.655z" />
+			</symbol>
+
+			<symbol id="ico-heart-status" viewBox="0 0 30 30">
+				<path d="M29.106,10.842c0,2.284-1.281,4.03-1.281,4.03c-0.704,0.959-1.972,2.429-2.819,3.266l-8.465,8.38c-0.846,0.838-2.232,0.838-3.079,0l-8.465-8.38c-0.847-0.838-2.115-2.308-2.819-3.266c0,0-1.282-1.746-1.282-4.03C0.894,6.511,4.442,3,8.818,3c2.251,0,4.283,0.929,5.725,2.421c0.161,0.166,0.161,0.166,0.161,0.166c0.162,0.193,0.43,0.193,0.593,0c0,0,0,0,0.16-0.166C16.899,3.929,18.931,3,21.182,3C25.558,3,29.106,6.511,29.106,10.842z" />
+			</symbol>
+
+			<symbol id="ico-info" viewBox="0 0 30 30">
+				<path d="M15.056,2.075C7.672,2.075,1.631,8.117,1.631,15.5c0,7.395,6.041,13.436,13.425,13.436
+						 c7.395,0,13.435-6.041,13.435-13.436C28.491,8.117,22.451,2.075,15.056,2.075L15.056,2.075z M16.737,23.894h-3.351V12.15h3.351
+						 V23.894z M16.737,10.469h-3.351V7.107h3.351V10.469z M16.737,10.469" />
+			</symbol>
+
+			<symbol id="ico-coins-nav" viewBox="0 0 30 30">
+				<path d="M29.419,10.871c-0.049-0.794-1.012-1.415-2.941-1.889c0.065-0.139,0.102-0.284,0.102-0.434V5.296h-0.006c-0.172-2.709-11.489-2.789-12.787-2.789c-1.301,0-12.618,0.08-12.789,2.789H0.99v3.251c0.002,0.883,1.164,1.575,2.893,2.09c-0.023,0.077-0.037,0.154-0.042,0.233H3.834v3.247c-1.863,0.472-2.793,1.084-2.839,1.865H0.99v3.254c0.002,0.615,0.567,1.134,1.493,1.57c-0.035,0.093-0.058,0.191-0.065,0.288H2.41v3.252c0.005,1.547,3.554,2.505,7.497,2.954c0.028,0.004,0.055,0.016,0.085,0.016c0.009,0,0.017-0.005,0.025-0.005c0.762,0.084,1.534,0.15,2.298,0.198c0.016,0.002,0.03,0.009,0.046,0.009c0.009,0,0.017-0.005,0.025-0.005c0.97,0.056,1.925,0.086,2.818,0.086c0.893,0,1.849-0.03,2.818-0.086c0.009,0,0.016,0.005,0.026,0.005c0.016,0,0.03-0.009,0.046-0.009c0.764-0.048,1.537-0.113,2.298-0.198c0.009,0,0.016,0.005,0.025,0.005c0.03,0,0.057-0.012,0.085-0.016c3.943-0.449,7.493-1.409,7.498-2.954v-3.252h-0.009c-0.033-0.569-0.528-1.046-1.506-1.443c0.06-0.134,0.092-0.272,0.092-0.418v-3.039c1.701-0.512,2.842-1.198,2.844-2.074v-3.252H29.419z M4.308,9.791V7.547c0.442,0.116,0.918,0.222,1.42,0.32v2.269c-0.058-0.014-0.118-0.025-0.176-0.037C5.3,10.046,5.055,9.989,4.819,9.927C4.641,9.884,4.47,9.837,4.308,9.791L4.308,9.791zM25.524,8.772L25.51,8.77l-0.174,0.132c-0.25,0.19-0.634,0.383-1.127,0.571V7.261c0.564-0.191,1.044-0.404,1.424-0.638v1.922C25.633,8.616,25.593,8.693,25.524,8.772L25.524,8.772z M12.92,19.228c0.13,0.002,0.259,0.005,0.391,0.007v2.321c-0.092,0-0.186,0-0.275-0.002c-0.042,0-0.084,0-0.123-0.002c-0.217-0.002-0.435-0.009-0.648-0.013l-0.081-0.005c-0.257-0.007-0.514-0.018-0.768-0.03v-2.321c0.474,0.023,0.951,0.036,1.428,0.045C12.869,19.228,12.895,19.228,12.92,19.228L12.92,19.228z M14.725,19.228c0.476-0.009,0.953-0.025,1.43-0.045v2.321c-0.102,0.005-0.204,0.009-0.308,0.014c-0.284,0.011-0.572,0.02-0.865,0.027c-0.069,0.002-0.138,0.002-0.208,0.005c-0.169,0.005-0.343,0.005-0.514,0.007v-2.321c0.129-0.002,0.259-0.005,0.391-0.007C14.675,19.228,14.7,19.228,14.725,19.228L14.725,19.228z M17.418,21.424c-0.104,0.007-0.211,0.016-0.317,0.023v-2.316c0.482-0.032,0.955-0.068,1.424-0.113v2.308c-0.295,0.029-0.592,0.059-0.9,0.084C17.555,21.413,17.486,21.42,17.418,21.424L17.418,21.424z M19.471,18.917c0.488-0.057,0.963-0.122,1.424-0.198v2.283c-0.447,0.077-0.921,0.148-1.424,0.213V18.917z M9.292,21.349c-0.049-0.004-0.097-0.009-0.144-0.013c-0.034-0.005-0.069-0.007-0.101-0.011v-2.308c0.465,0.045,0.939,0.081,1.42,0.113v2.316C10.069,21.418,9.676,21.386,9.292,21.349L9.292,21.349z M8.098,18.917v2.298c-0.5-0.066-0.974-0.136-1.42-0.213V18.72C7.135,18.795,7.61,18.86,8.098,18.917L8.098,18.917zM21.84,20.823v-2.269c0.505-0.095,0.979-0.204,1.424-0.32v2.244C22.84,20.599,22.366,20.714,21.84,20.823L21.84,20.823zM12.92,8.541c0.13,0.002,0.259,0.005,0.391,0.005v2.321c-0.639-0.007-1.273-0.023-1.895-0.052V8.496c0.474,0.02,0.951,0.036,1.428,0.045C12.869,8.541,12.895,8.541,12.92,8.541L12.92,8.541z M14.725,8.539c0.476-0.009,0.953-0.023,1.43-0.043v2.317c-0.081,0.005-0.16,0.009-0.241,0.013c-0.004,0-0.011,0-0.018,0.002c-0.319,0.014-0.643,0.023-0.972,0.03c-0.05,0.002-0.101,0.002-0.152,0.005c-0.169,0.002-0.343,0.005-0.514,0.005V8.546c0.132,0,0.262-0.002,0.391-0.005L14.725,8.539z M17.569,14.116c0.477-0.009,0.954-0.023,1.428-0.045v2.319c-0.622,0.03-1.254,0.046-1.895,0.052v-2.319c0.132-0.002,0.262-0.002,0.391-0.005L17.569,14.116z M13.001,16.313c-0.303-0.023-0.599-0.048-0.889-0.077c-0.062-0.005-0.125-0.012-0.185-0.018c-0.014,0-0.025-0.002-0.039-0.005v-2.308c0.468,0.045,0.942,0.082,1.424,0.113v2.317c-0.04-0.002-0.079-0.005-0.118-0.007C13.128,16.321,13.066,16.317,13.001,16.313L13.001,16.313z M10.062,15.981c-0.187-0.029-0.363-0.061-0.544-0.093V13.61c0.461,0.073,0.935,0.139,1.424,0.195v2.299c-0.291-0.036-0.574-0.077-0.847-0.118C10.084,15.983,10.074,15.981,10.062,15.981L10.062,15.981z M15.764,14.118c0.13,0.002,0.259,0.002,0.392,0.005v2.321c-0.232-0.002-0.465-0.005-0.689-0.009c-0.035-0.002-0.07-0.002-0.105-0.002c-0.357-0.009-0.706-0.023-1.048-0.039c-0.019,0-0.037-0.002-0.056-0.002V14.07c0.477,0.023,0.954,0.037,1.43,0.045C15.713,14.116,15.738,14.116,15.764,14.118L15.764,14.118z M20.533,16.292c-0.016,0-0.032,0.002-0.051,0.002c-0.176,0.016-0.358,0.025-0.537,0.037v-2.313c0.479-0.031,0.956-0.068,1.421-0.113v2.305C21.091,16.24,20.818,16.267,20.533,16.292L20.533,16.292z M9.047,10.635V8.33c0.465,0.044,0.939,0.082,1.42,0.114v2.312C9.986,10.722,9.51,10.683,9.047,10.635L9.047,10.635z M18.525,10.635c-0.458,0.045-0.933,0.089-1.424,0.123V8.443c0.482-0.032,0.955-0.07,1.424-0.114V10.635z M19.471,8.228c0.488-0.057,0.963-0.123,1.424-0.195v2.278c-0.451,0.077-0.923,0.149-1.424,0.213V8.228z M21.84,10.132V7.867c0.505-0.098,0.979-0.205,1.424-0.32v2.239C22.838,9.907,22.359,10.022,21.84,10.132L21.84,10.132z M8.098,8.228v2.296c-0.095-0.012-0.192-0.02-0.284-0.034c-0.06-0.007-0.118-0.016-0.178-0.025c-0.273-0.038-0.541-0.08-0.803-0.123c-0.053-0.009-0.104-0.018-0.155-0.027V8.033C7.135,8.105,7.61,8.171,8.098,8.228L8.098,8.228z M8.573,13.444v2.265c-0.526-0.111-1-0.229-1.424-0.35v-2.238C7.593,13.24,8.068,13.347,8.573,13.444L8.573,13.444z M23.692,15.9c-0.208,0.034-0.417,0.07-0.632,0.102c-0.125,0.019-0.252,0.037-0.377,0.055c-0.12,0.016-0.245,0.03-0.368,0.045v-2.296c0.488-0.056,0.962-0.123,1.423-0.195v2.281C23.722,15.893,23.708,15.897,23.692,15.9L23.692,15.9z M6.203,12.838v2.208c-0.745-0.281-1.227-0.57-1.382-0.826l-0.032-0.052c-0.002-0.016-0.007-0.03-0.009-0.045v-1.924C5.159,12.432,5.638,12.645,6.203,12.838L6.203,12.838z M5.729,18.554v2.269c-0.435-0.091-0.835-0.186-1.201-0.283c-0.058-0.016-0.118-0.032-0.176-0.048c-0.014-0.005-0.03-0.009-0.044-0.014v-2.244C4.75,18.35,5.226,18.459,5.729,18.554L5.729,18.554z M7.149,23.667v2.269c-0.523-0.109-1-0.225-1.421-0.345v-2.244C6.17,23.462,6.647,23.571,7.149,23.667L7.149,23.667z M8.098,23.832c0.458,0.075,0.932,0.141,1.421,0.198v2.299c-0.499-0.066-0.974-0.137-1.421-0.213V23.832z M10.467,24.129c0.467,0.043,0.942,0.081,1.421,0.113v2.317c-0.491-0.034-0.964-0.075-1.421-0.123V24.129z M12.837,24.295c0.475,0.02,0.951,0.036,1.43,0.045c0.025,0,0.049,0,0.074,0c0.129,0.002,0.261,0.005,0.391,0.007v2.321c-0.655-0.005-1.287-0.023-1.895-0.052V24.295z M15.681,24.345c0.13,0,0.259-0.002,0.391-0.005l0.074-0.002c0.479-0.009,0.955-0.023,1.43-0.043v2.319c-0.608,0.03-1.24,0.048-1.895,0.055V24.345z M18.525,24.243c0.479-0.032,0.953-0.068,1.42-0.113v2.307c-0.456,0.048-0.93,0.089-1.42,0.123V24.243z M20.894,24.03c0.488-0.059,0.963-0.125,1.421-0.198v2.283c-0.447,0.077-0.921,0.148-1.421,0.213V24.03z M23.264,23.667c0.502-0.098,0.979-0.205,1.421-0.32v2.244c-0.421,0.12-0.898,0.237-1.421,0.345V23.667z M25.58,19.387l-0.16,0.138c-0.25,0.215-0.664,0.431-1.21,0.64v-2.214c0.564-0.193,1.044-0.406,1.424-0.64v1.924C25.633,19.283,25.614,19.333,25.58,19.387L25.58,19.387z M25.899,15.425c-0.236,0.064-0.486,0.125-0.74,0.184c-0.118,0.027-0.239,0.052-0.361,0.079c-0.037,0.007-0.076,0.016-0.113,0.023v-2.266c0.504-0.098,0.978-0.204,1.423-0.323v2.247C26.037,15.387,25.969,15.405,25.899,15.425L25.899,15.425z M1.939,8.547V6.624c0.377,0.233,0.856,0.447,1.42,0.638v2.226C2.438,9.149,1.939,8.809,1.939,8.547L1.939,8.547z M1.939,19.235v-1.924c0.377,0.234,0.856,0.447,1.42,0.64v2.214l-0.271-0.102l-0.005,0.004C2.339,19.766,1.939,19.469,1.939,19.235L1.939,19.235z M3.359,24.347v-1.925c0.38,0.234,0.859,0.447,1.421,0.64v2.224C3.859,24.949,3.359,24.608,3.359,24.347L3.359,24.347z M25.633,25.287v-2.224c0.562-0.193,1.041-0.407,1.421-0.64v1.922C27.054,24.608,26.554,24.949,25.633,25.287L25.633,25.287z M27.054,15.062v-2.224c0.564-0.193,1.044-0.406,1.42-0.64v1.924C28.474,14.384,27.975,14.724,27.054,15.062L27.054,15.062z M27.054,15.062" />
+			</symbol>
+
+			<symbol id="ico-blog" viewBox="0 0 30 30">
+				<path d="M11.942,6.121c6.595,0,11.941,5.35,11.941,11.949h-2.559c0-2.508-0.976-4.865-2.748-6.639
+						 c-1.772-1.773-4.128-2.75-6.634-2.75V6.121z M11.942,1C21.363,1,29,8.642,29,18.069h-2.56c0-1.96-0.382-3.86-1.138-5.647
+						 c-0.731-1.727-1.776-3.279-3.109-4.613c-1.333-1.333-2.883-2.38-4.61-3.11C15.798,3.944,13.9,3.56,11.942,3.56V1z M17.016,12.992
+						 c1.166,1.167,1.749,2.696,1.748,4.226c-1.704,2.56-1.704,5.973-1.704,5.973c-6.824,0-11.941,5.121-11.941,5.121l-0.373-0.374
+						 l-0.617-0.617l7.558-7.563c0.083,0.012,0.168,0.019,0.255,0.019c0.942,0,1.706-0.764,1.706-1.707s-0.764-1.707-1.706-1.707
+						 c-0.942,0-1.706,0.764-1.706,1.707c0,0.087,0.007,0.172,0.019,0.255l-7.558,7.564l-0.989-0.991c0,0,5.117-5.121,5.117-11.949
+						 c0,0,3.411,0,5.97-1.707C14.323,11.242,15.85,11.825,17.016,12.992L17.016,12.992z M17.016,12.992" />
+			</symbol>
+
+			<symbol id="ico-facebook" viewBox="0 0 30 30">
+				<path d="M12.788,23.449h3.459v-8.64h2.321c0,0,0.218-1.394,0.323-2.919h-2.631V9.903c0-0.297,0.377-0.696,0.75-0.696h1.885V6.179
+						 h-2.564c-3.629,0-3.544,2.91-3.544,3.345v2.377h-1.684v2.907h1.684V23.449z M12.788,23.449" />
+			</symbol>
+
+			<symbol id="ico-instagram" viewBox="0 0 30 30">
+				<path d="M19.263,6.179h-8.404c-2.359,0-4.278,1.985-4.278,4.426v8.693c0,2.441,1.919,4.426,4.278,4.426h8.404
+						 c2.359,0,4.278-1.985,4.278-4.426v-8.693C23.541,8.164,21.622,6.179,19.263,6.179z M21.696,19.298
+						 c0,1.388-1.091,2.516-2.433,2.516h-8.404c-1.341,0-2.432-1.129-2.432-2.516v-8.693c0-1.387,1.091-2.516,2.432-2.516h8.404
+						 c1.341,0,2.433,1.129,2.433,2.516V19.298z M19.569,9.229c-0.57,0-1.034,0.48-1.034,1.069c0,0.589,0.464,1.069,1.034,1.069
+						 c0.57,0,1.033-0.48,1.033-1.069C20.603,9.708,20.14,9.229,19.569,9.229z M15.061,10.433c-2.409,0-4.368,2.027-4.368,4.518
+						 c0,2.491,1.959,4.519,4.368,4.519c2.408,0,4.368-2.028,4.368-4.519C19.429,12.46,17.469,10.433,15.061,10.433z M15.061,17.561
+						 c-1.39,0-2.523-1.171-2.523-2.61c0-1.438,1.132-2.609,2.523-2.609c1.391,0,2.522,1.171,2.522,2.609
+						 C17.583,16.39,16.452,17.561,15.061,17.561z" />
+			</symbol>
+
+			<symbol id="ico-youtube" viewBox="0 0 30 30">
+				<path d="M5.834,23.471c3.034,0.35,6.105,0.352,9.162,0.35c3.059,0.002,6.129,0,9.163-0.35c1.281-0.148,2.345-1.142,2.645-2.488
+						 c0.427-1.916,0.428-4.009,0.428-5.983c0-1.974,0.004-4.066-0.423-5.983c-0.299-1.347-1.364-2.339-2.646-2.487
+						 c-3.034-0.351-6.105-0.352-9.162-0.351c-3.058-0.001-6.13,0-9.163,0.351c-1.28,0.148-2.345,1.141-2.643,2.487
+						 C2.769,10.934,2.764,13.026,2.764,15c0,1.973,0,4.067,0.427,5.983C3.488,22.329,4.553,23.323,5.834,23.471L5.834,23.471z
+						 M11.84,10.559c2.593,1.4,5.169,2.789,7.779,4.197c-2.603,1.396-5.179,2.778-7.779,4.173V10.559z M11.84,10.559" />
+			</symbol>
+
+			<symbol id="ico-sidebar-caret" viewBox="0 0 30 30">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M15.328,24.334l9.784-15.657H5.543L15.328,24.334" />
+			</symbol>
+
+			<symbol id="ico-attachment" viewbox="0 0 30 30">
+				<path d="M26.44,8.968v16.197H6.829V8.968H26.44 M28.074,7.348H5.194v19.437h22.88V7.348z M8.463,21.925h16.343l-3.269-9.719
+						 l-4.903,6.479l-3.268-3.239L8.463,21.925z M10.097,12.207c-0.903,0-1.635,0.724-1.635,1.62c0,0.895,0.731,1.62,1.635,1.62
+						 c0.903,0,1.635-0.724,1.635-1.62C11.732,12.931,11.001,12.207,10.097,12.207L10.097,12.207z M1.926,4.108v19.437H3.56V5.728
+						 h21.245v-1.62H1.926z M1.926,4.108" />
+			</symbol>
+
+			<symbol id="ico-left-arrow" viewbox="0 0 30 30">
+				<path d="M19.066,3l2.818,2.823l-9.249,9.268l9.249,9.266l-2.818,2.826L7,15.091L19.066,3z M19.066,3" />
+			</symbol>
+
+			<symbol id="ico-profile-nav" viewbox="0 0 30 30">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M5.827,13.207c-1.266,0-2.293,1.027-2.293,2.293
+																 c0,1.266,1.027,2.293,2.293,2.293c1.267,0,2.294-1.027,2.294-2.293C8.12,14.233,7.094,13.207,5.827,13.207z M15,13.207
+																 c-1.267,0-2.293,1.027-2.293,2.293c0,1.266,1.026,2.293,2.293,2.293c1.266,0,2.293-1.027,2.293-2.293
+																 C17.294,14.233,16.267,13.207,15,13.207z M24.173,13.207c-1.267,0-2.293,1.027-2.293,2.293c0,1.266,1.026,2.293,2.293,2.293
+																 c1.266,0,2.293-1.027,2.293-2.293C26.466,14.233,25.44,13.207,24.173,13.207z" />
+			</symbol>
+
+			<symbol id="ico-smile" viewbox="0 0 30 30">
+				<path d="M15,3C8.364,3,2.929,8.435,2.929,15.071c0,6.636,5.435,12.071,12.071,12.071c6.636,0,12.071-5.435,12.071-12.071
+						 C27.071,8.435,21.636,3,15,3L15,3z M19.226,10.244c0.966,0,1.809,0.842,1.809,1.809c0,0.967-0.844,1.809-1.809,1.809
+						 c-0.967,0-1.809-0.842-1.809-1.809C17.417,11.086,18.259,10.244,19.226,10.244L19.226,10.244z M10.773,10.244
+						 c0.967,0,1.81,0.842,1.81,1.809c0,0.967-0.842,1.809-1.81,1.809c-0.965,0-1.809-0.842-1.809-1.809
+						 C8.964,11.086,9.808,10.244,10.773,10.244L10.773,10.244z M15,22.315c-3.135,0-5.794-2.052-6.76-4.827h13.52
+						 C20.794,20.263,18.135,22.315,15,22.315L15,22.315z M15,22.315" />
+			</symbol>
+			<symbol id="ico-send" viewbox="0 0 30 30">
+				<path clip-path="url(#SVGID_2_)" d="M2.52,26.077l25.762-11.038L2.52,4v8.59l18.4,2.449l-18.4,2.456V26.077z M2.52,26.077" />
+			</symbol>
+
+		</svg>
+		<!-- SVG Library END -->
+
+		<div class="wrapper-mob">
+
+
+			<!--sidebar navigation-->
+			<div class="sidebar-opened"></div>
+			<div class="sidebar">
+
+
+				<div class="btn-close-sidebar">
+					<svg>
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nav-close-ico"></use>
+					</svg>
+				</div>
+
+				<div class="sidebar-top">
+
+					<img src="img/logo-mob.png" alt="Ukrainian real brides" class="sidebar-logo">
+
+					<div class="sidebar-user-wrap">
+						<a href="#" class="sidebar-user-photo">
+							<span class="avatar_photo-cover">
+								<img src="img/profile-man.png" alt="Profile photo">
+							</span>
+
+
+							<span href="#" class="sidebar-user-settings">
+								<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#settings-ico"></use></svg>
+							</span>
+
+							<div class="sidebar-user_balance">
+								<span>20</span>
+								<i class="active">
+									<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-balance-sidebar"></use></svg>
+								</i>
+							</div>
+						</a>
+						<a href="#" class="sidebar_user-name">Alexander</a>
+					</div>
+
+					<nav class="sidebar-nav">
+
+						<ul>
+							<li>
+								<a href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-female"></use></svg>
+									</span>
+									<span>Woman profiles</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-letter"></use></svg>
+									</span>
+									<span>Letters</span>
+									<strong class="sidebar-nav_notification">221</strong>
+								</a>
+							</li>
+
+							<li class="sidebar-dropdown">
+								<a class="sidebar-dropdown" href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-nav"></use></svg>
+									</span>
+									<span>Matchmaking</span>
+									<strong class="sidebar-dropdown-ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
+									</strong>
+								</a>
+								<ul class="sidebar-nav_dropdown">
+									<li><a href="#">Matchmaking Coaching</a></li>
+									<li><a href="#">Matchmaking Tours</a></li>
+									<li><a href="#">Personal Matchmaking</a></li>
+								</ul>
+							</li>
+
+							<li class="sidebar-dropdown">
+								<a href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-info"></use></svg>
+									</span>
+									<span>Information</span>
+									<strong class="sidebar-dropdown-ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-sidebar-caret"></use></svg>
+									</strong>
+								</a>
+
+								<ul class="sidebar-nav_dropdown">
+									<li><a href="#">Support</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Blog</a></li>
+								</ul>
+
+							</li>
+
+							<li>
+								<a href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-coins-nav"></use></svg>
+									</span>
+									<span>Purchase coins</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<span class="sidebar-nav_ico">
+										<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-blog"></use></svg>
+									</span>
+									<span>Blog</span>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+
+
+				</div>
+
+
+				<div class="sidebar-footer">
+					<ul class="sidebar-footer_nav">
+						<li><a href="#">Contact Us</a></li>
+						<li><a class="btn-log-out" href="#">Log out</a></li>
+					</ul>
+
+					<ul class="sidebar-footer_social">
+						<li>
+							<a href="https://www.facebook.com/ukrainianrealbrides">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-facebook"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/ukrainianrealbrides">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-instagram"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.instagram.com/ukrainianrealbrides">
+								<svg>
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-youtube"></use>
+								</svg>
+							</a>
+						</li>
+
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<main class="homepage">
+
+				<div class="home-banner" style="background-image: url('../img/homepage/main-banner.jpg')">
+					<h1 class="home-banner_title">Meet the Love of your life with <strong>Ukrainian Real Brides</strong></h1>
+				</div>
+
+				<div class="homepage-authorization">
+					<strong class="auth-title">Become our member</strong>
+
+					<div class="auth-buttons">
+						<button class="btn-auth auth-google"><i class="fa fa-google-plus-official" aria-hidden="true"></i><span>Sign up with Google +</span></button>
+						<button class="btn-auth auth-facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i><span>Sign up with Facebook</span></button>
+					</div>
+
+					<span class="auth-subtitle">Or create an account</span>
+
+					<form class="auth-form">
+						<input type="text" class="auth-form_field" placeholder="Name" required>
+						<input type="email" class="auth-form_field" placeholder="E-mail" required>
+						<input type="email" class="auth-form_field" placeholder="Password" required>
+						<button type="button" class="btn-homepage btn-shadow btn-red">Join us now</button>
+					</form>
+					<button type="button" class="btn-homepage btn-transparent">Learn more</button>
+
+				</div>
+
+				<div class="homepage-content">
+
+					<div class="homepage-content_row">
+						<div class="portrait-photo">
+							<img src="img/homepage/matchmaker.jpg" alt="Ukrainian Real Brides matchmaker" width="366" height="518">
+						</div>
+
+						<div class="content-container">
+							<strong class="home-heading">Are you looking for the ideal life partner?</strong>
+							<i class="home-subheading">We can do our best to find this special person for you!</i>
+							<p class="home-text">Ukrainian Real Brides is a not only an online dating website, we believe that online communication is a great tool to keep in touch with someone who lives far away from you and also to meet people.</p>
+							<button type="button" class="btn-standart btn-transparent">Read more</button>
+						</div>
+					</div>
+
+					<div class="homepage-content_row">
+
+						<div class="portrait-photo">
+							<img src="img/homepage/founder.jpg" alt="Ukrainian Real Brides CEO" width="366" height="518">
+						</div>
+
+						<div class="content-container">
+							<strong class="home-heading">Are you looking for the ideal life partner?</strong>
+							<i class="home-subheading">We can do our best to find this special person for you!</i>
+							<div class="homepage_paragraph-holder">
+								<p class="home-text">Ukrainian Real Brides is a not only an online dating website, we believe that online communication is a great tool to keep in touch with someone who lives far away from you and also to meet people.</p>
+
+								<button type="button" class="btn-standart btn-transparent">Read more</button>
+							</div>
+						</div>
+
+						<div class="homepage-content_row">
+							<div class="content-banner" style="background-image: url('../img/homepage/main-banner.jpg')">
+								<div class="content-banner_inner">
+									<p>Start communication with someone you like right now</p>
+									<button class="btn-homepage btn-shadow btn-red">Online live chat</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="homepage-paragraph">
+							<div class="content-container">
+								<strong class="home-heading">Create your personal profile and find singles online</strong>
+								<div class="homepage_paragraph-holder">
+									<p class="home-text">There aren’t many situations in the life where it’s acceptable to talk at length about yourself to random strangers without pause or interjection. And it’s usually even less socially acceptable to start disclosing your life story, what you’re looking for in a life partner, your ideal date, your music taste, and your favorite movies—in rapid succession—to people you don’t know and have never met.</p>
+								</div>
+								<button type="button" class="btn-standart btn-transparent">Read more</button>
+							</div>
+						</div>
+
+						<div class="homepage-paragraph">
+							<div class="content-container">
+								<strong class="home-heading">Over 5 million Ukrainian brides are looking to find someone special</strong>
+								<div class="homepage_paragraph-holder">
+									<p class="home-text">It is well known that Ukraine is not only the largest country in Europe, famous with its historical monuments and unique soil, but also Ukraine is famous with Ukrainian Ladies.</p>
+									<p class="home-text">Why do Ukrainian Real Brides look for someone who lives in another country or even continent? We know the answer, because Ukrainian men not all, but many of them are very immature and they are not ready to take a decision to start serious relationship or marriage, because they are afraid of the responsibilities.</p>
+								</div>
+								<button type="button" class="btn-standart btn-transparent">Read more</button>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="homepage-content_row">
+						<div class="content-container">
+
+							<div class="homepage-ladies">
+
+								<button class="btn-online-register">
+
+									<div class="online-register_left">
+										<strong class="online-register_title">58 ladies</strong>
+										<span class="online-register_bottom">
+											<span class="ico-context">
+												<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-heart-status"></use></svg>
+											</span>
+											<i>online</i>
+										</span>
+									</div>
+
+									<div class="online-register_right">
+										<strong class="online-register_title">Sign up for Free</strong>
+									</div>
+								</button>
+
+							</div>
+							
+							<div class="homepage-ladies_row">
+							
+								<a href="#" class="homepage-ladies_profile">
+									<span class="lady-profile_photo">
+										<img src="img/homepage/lady-01.png" alt="Lady profile">
+									</span>
+									<span class="ladies-profile_bottom">
+										<strong>Anastasia</strong>
+										<i>ID: 209</i>
+									</span>
+								</a>
+								
+								<a href="#" class="homepage-ladies_profile">
+									<span class="lady-profile_photo">
+										<img src="img/homepage/lady-02.png" alt="Lady profile">
+									</span>
+									<span class="ladies-profile_bottom">
+										<strong>Anna</strong>
+										<i>ID: 011</i>
+									</span>
+								</a>
+								
+								<a href="#" class="homepage-ladies_profile">
+									<span class="lady-profile_photo">
+										<img src="img/homepage/lady-01.png" alt="Lady profile">
+									</span>
+									<span class="ladies-profile_bottom">
+										<strong>Anastasia</strong>
+										<i>ID: 209</i>
+									</span>
+								</a>
+
+								<a href="#" class="homepage-ladies_profile">
+									<span class="lady-profile_photo">
+										<img src="img/homepage/lady-02.png" alt="Lady profile">
+									</span>
+									<span class="ladies-profile_bottom">
+										<strong>Anna</strong>
+										<i>ID: 011</i>
+									</span>
+								</a>
+								
+							</div>
+						</div>
+						
+						<div class="homepage-content_row">
+							<div class="content-banner" style="background-image: url('../img/homepage/main-banner.jpg')">
+								<div class="content-banner_inner">
+									<p>Choose the lady you like and send her a free massage</p>
+									<button class="btn-homepage btn-shadow btn-red">Messaging</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="homepage-content_row">
+							<div class="content-container">
+								<strong class="home-heading text-center">Successful stories</strong>
+								
+								<div class="homepage-stories">
+								
+									<div href="#" class="homepage-story-block">
+										<span class="story-img">
+											<img src="img/homepage/story-01.jpg" alt="Successfull story">
+										</span>
+										<span class="story-bottom">
+											<strong>Denny and Oksana</strong>
+											<i>On the 19 of August 2017 we were very happy to be guests on the wedding of our successful couple, Denny from Canada...</i>
+											<button type="button" class="btn-standart btn-transparent">Read more</button>
+										</span>
+									</div>
+									
+									<div href="#" class="homepage-story-block">
+										<span class="story-img">
+											<img src="img/homepage/story-02.jpg" alt="Our blog">
+										</span>
+										<span class="story-bottom">
+											<strong>Blog</strong>
+											<i><strong>Read all successfull stories and matchmaker tips in our blog</strong></i>
+											<button type="button" class="btn-standart btn-transparent">Visit our blog</button>
+										</span>
+									</div>
+
+								</div>
+								
+								
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</main>
+
+
+			<footer class="footer-mob">
+				<a href="#" class="footer-mob_logo">
+					<img src="img/logo-mob.png" alt="Ukrainian real brides">
+				</a>
+				<p>Ukrainian Real Brides 2015-2017 © All rights reserved.</p>
+			</footer>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/common.js"></script>
+
+	</body>
+
+</html>

@@ -105,6 +105,13 @@ $(document).ready(function() {
 		variableWidth: true
 	});
 	
+	$(".profile-slider").slick({
+		arrows: false,
+		infinite: false,
+		focusOnSelect: true,
+		slidesToShow: 1,
+	});
+	
 });
 
 
