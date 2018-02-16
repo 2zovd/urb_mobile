@@ -123,4 +123,9 @@ $(window).on('load', function() {
 	$('.page-preloader_wrapper-2').delay(1000).fadeOut('slow');
 });
 
+$('.btn-show-hide').click(function() {
+	$(this).css('display', 'none');
+	$('.content-container').addClass('visible');
+});
+
 
