@@ -2085,6 +2085,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5rem 1.5rem; }
+  .btn-auth i {
+    vertical-align: middle; }
 
 .auth-buttons {
   margin-bottom: 0.6rem;
