@@ -4,9 +4,10 @@
 	margin: 0 auto
 
 .btn-header
-	line-height: 2.4rem
-	font-size: 1.2rem
-	min-width: 8.3rem
+    line-height: 2.4rem
+    font-size: 1.2rem
+    min-width: 8.3rem
+    text-align: center
 
 .home-banner
 	background-image: url('../img/homepage/main-banner.jpg')
@@ -240,6 +241,8 @@
 	min-height: 3.1rem
 	margin-bottom: 1.5rem
 	cursor: pointer
+	text-align: center
+	padding-top: 8px
 	&.as-link
 		text-align: center
 		display: inline-block
@@ -351,6 +354,8 @@
 		text-transform: uppercase
 		font-style: normal
 		font-size: 1.4rem
+	@include sm
+		width: 22%
 
 .homepage-ladies_row
 	display: flex
@@ -367,11 +372,13 @@
 	img
 		position: absolute
 		left: 50%
-		top: 50%
-		transform: translate(-50%, -50%)
+		top: 50
+		transform: translate(-50%, 0)
 		width: 110%
 		height: auto
 	@include sm
+		min-height: 19rem
+	@include md
 		min-height: 25rem
 
 .ladies-profile_bottom
@@ -438,6 +445,8 @@
 		min-height: 4rem
 		margin-bottom: 0
 		font-size: 1.3rem
+	@include sm
+		min-height: 18rem
 
 
 	

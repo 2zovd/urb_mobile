@@ -3,6 +3,7 @@
     
 .settings-info
     padding: 2rem 0
+    display: flex
     
 .settings-info_image    
     overflow: hidden
@@ -26,17 +27,67 @@
     position: relative
     button
         position: absolute
-        right: 0
-        top: 0
+        right: -2px
+        top: -2px
         border-radius: 100%
         background-color: #8c8c8c
         width: 1.7rem
         height: 1.7rem
         text-align: center
         svg
+            position: absolute
+            left: 50%
+            top: 50%
+            -webkit-transform: translate(-50%,-50%)
+            -ms-transform: translate(-50%,-50%)
+            -o-transform: translate(-50%,-50%)
+            transform: translate(-50%,-50%)
             display: inline-block
             vertical-align: middle
             fill: #fff
             width: 0.7rem
             height: 0.7rem
             
+.settings-info_name
+    display: block
+    margin-bottom: 1rem
+    font-family: $main-font
+    font-weight: $medium
+    font-size: 2.4rem
+            
+.settings-info_balance
+    padding-bottom: 1rem
+    margin-bottom: 1rem
+    display: block
+    border-bottom: 1px solid #e7e7e7
+    width: 100%
+    span
+        font-family: $main-font
+        font-weight: $regular
+        font-size: 1.4rem
+        color: #757575
+        margin-right: 0.5rem
+    strong
+        font-family: $main-font
+        font-weight: $medium
+        font-size: 1.8rem
+        color: #000
+    
+.settings-info_content
+    padding-left: 2.8rem
+    flex-grow: 1
+    
+.settings-info_ico-balance
+    display: inline-block
+    width: 2rem
+    height: 1.8rem
+    svg
+        fill: #a0a0a0
+    &.active
+        svg
+            fill: #cfae5e
+
+.btn-refill
+    @extend .btn-standart
+    border: 1px solid $green
+    color: $green
