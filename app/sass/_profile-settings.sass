@@ -1,14 +1,17 @@
 .settings-container
     padding: 0 2rem
+    margin-bottom: 2rem
     
 .settings-info
-    padding: 2rem 0
+    padding-top: 2rem
     display: flex
     
 .settings-info_image    
     overflow: hidden
     border-radius: 100%
     position: relative
+    display: block
+    z-index: 1
     width: 100%
     height: 100%
     img
@@ -27,6 +30,7 @@
     position: relative
     button
         position: absolute
+        z-index: 2
         right: -2px
         top: -2px
         border-radius: 100%
@@ -86,8 +90,217 @@
     &.active
         svg
             fill: #cfae5e
-
+            
 .btn-refill
     @extend .btn-standart
     border: 1px solid $green
     color: $green
+    margin-bottom: 0
+    cursor: pointer
+
+.settings-title
+    display: inline-block
+    font-weight: $bold
+    color: #000
+    
+.settings_title-holder
+    font-family: $main-font
+    font-size: 1.4rem
+    p
+        display: inline-block
+        font-weight: $regular
+    &_drop
+        @extend .settings_title-holder
+        display: flex
+        justify-content: space-between
+
+.settings-photos_slider
+    margin-bottom: 2rem
+    padding-left: 2rem
+    
+.settings-photos_slider-item
+    display: inline-block
+    border-radius: $radius
+    border: 1px solid #e7e7e7
+    background-color: #f6f6f6
+    margin-right: 1rem
+    width: 11rem
+    height: 11rem
+    position: relative
+    cursor: pointer
+    overflow: hidden
+    img
+        position: absolute
+        z-index: 3
+        width: 150%
+        height: auto
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+    &.empty
+        border: 1px solid #e7e7e7
+        background-color: #f6f6f6
+        position: relative
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            width: 3.1rem
+            height: 2.8rem
+            background-image: url('')
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-size: cover
+            background-color: #d1d1d1
+            -webkit-mask-image: url('../img/icons/add-photo.svg')
+            mask-image: url('../img/icons/add-photo.svg')
+            fill: #fff
+            stroke: #fff
+		
+.settings-schedule_container
+    margin: 2.5rem 0
+        
+.settings-schedule
+    display: inline-block
+    font-family: $main-font
+    font-weight: $medium
+    font-size: 1.2rem
+    color: #757575
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 0 1.5rem
+    padding-top: 2.2rem
+    border-top: 1px solid #e7e7e7
+    p
+        display: inline-block
+        margin-right: 2rem
+
+.btn-schedule-call
+	@extend .btn-custom-mob
+    
+.settings-content
+    
+.settings-drop_header-text
+    font-family: $main-font
+    font-weight: $medium
+    font-size: 1.2rem
+    color: #757575
+    display: none
+    
+.settings-drop_row
+    background-color: #f6f6f6
+    border: 1px solid #e7e7e7
+    border-radius: $radius
+    margin-bottom: 1rem
+    .settings-title_arrow
+        svg
+            fill: #999999
+            width: 2.3rem
+            height: 1.7rem
+            transform: rotate(180deg)
+    &.active
+        .settings-title_arrow
+            svg
+                fill: $red
+                transform: rotate(0deg)
+        .settings-title.row-heading
+            font-weight: $medium
+            color: $red  
+        .settings-drop_header-text
+            display: block
+        .settings_title-holder_drop
+            margin-bottom: 1.3rem
+        .settings-drop_content
+            display: block
+            border-top: 1px solid #e7e7e7
+    
+%settings-drop-style
+    padding: 2rem 1.5rem
+    
+.settings-drop_header
+    @extend %settings-drop-style
+    text-align: left
+    width: 100%
+    
+.settings-drop_content
+    display: none
+    @extend %settings-drop-style
+    border-top: none
+    .settings-title
+        margin-bottom: 1.4rem
+    
+.text-star
+    color: $red
+    
+.settings-drop_form-row
+    margin-bottom: 1.5rem
+    &.form-border
+        padding: 2rem 0
+        border-bottom: 1px solid #cdcdcd
+
+%form-field
+    display: block
+    font-family: $main-font
+    font-weight: $medium
+    border-radius: $radius
+    border: 1px solid #e7e7e7
+    background-color: #fff
+    font-size: 1.4rem
+    line-height: 3.5rem
+    padding: 0 1.5rem
+    
+.settings_form-field
+    @extend %form-field
+    width: 100%
+    &:nth-child(3)
+        margin-top: 1rem
+    
+.settings_form-textarea
+    @extend %form-field
+    width: 100%
+    resize: none
+    min-height: 10rem
+    padding: 1rem 1.5rem
+    line-height: 1.5
+    
+.settings_select-row
+    display: flex
+    justify-content: space-between
+    
+.birth_form-select
+    @extend %form-field
+    height: 3.5rem
+    min-width: 6.7rem
+    color: #989898
+    width: 25%
+    padding: 0 0 0 1.5rem
+    &:last-child
+        width: 35%
+    
+.custom_form-select
+    @extend %form-field
+    height: 3.5rem
+    width: 100%
+    color: #989898
+    padding: 0 0 0 1.5rem
+    
+.double_form-select    
+    @extend %form-field
+    height: 3.5rem
+    width: 47%
+    color: #989898
+    padding: 0 0 0 1.5rem
+    
+.btn-change
+    @extend .btn-standart
+    width: 100%
+    border: 1px solid #cdcdcd
+    background-color: transparent
+    margin-top: 1rem
+    margin-bottom: 0
+    color: #757575
+    height: 4rem
