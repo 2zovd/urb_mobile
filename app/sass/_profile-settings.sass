@@ -150,7 +150,6 @@
             transform: translate(-50%,-50%)
             width: 3.1rem
             height: 2.8rem
-            background-image: url('')
             background-repeat: no-repeat
             background-position: 0 0
             background-size: cover
@@ -183,6 +182,7 @@
 	@extend .btn-custom-mob
     
 .settings-content
+    margin-bottom: 3.5rem
     
 .settings-drop_header-text
     font-family: $main-font
@@ -248,10 +248,13 @@
     font-weight: $medium
     border-radius: $radius
     border: 1px solid #e7e7e7
-    background-color: #fff
+    background-color: #fff !important
     font-size: 1.4rem
     line-height: 3.5rem
     padding: 0 1.5rem
+    box-shadow: none
+    background-color: #fff
+    appearance: none
     
 .settings_form-field
     @extend %form-field
@@ -271,31 +274,69 @@
     display: flex
     justify-content: space-between
     
-.birth_form-select
+%custom-select
+    padding: 0
+    border: none
+    box-shadow: none
+    background: transparent
+    background-image: none
+    -webkit-appearance: none
+    select:focus
+        outline: none
+    
+.custom-dorm-select,
+.select-row
+    width: 100%
+    
+.select-cover
     @extend %form-field
     height: 3.5rem
-    min-width: 6.7rem
     color: #989898
+    padding: 0
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        right: 1rem
+        top: 50%
+        width: 1rem
+        height: 1rem
+        transform: translateY(-50%)
+        background-image: url('../img/icons/arrow-down-carret.svg')
+        background-repeat: no-repeat
+        background-position: 0 0
+        background-size: contain
+        opacity: 0.5
+    select
+        @extend %custom-select
+        height: 100%
+        width: 100%
+        color: #989898
+        display: block
+        font-family: $main-font
+        font-weight: $medium
+        border-radius: $radius
+        font-size: 1.4rem
+        line-height: 3.5rem
+        padding: 0 1.5rem
+        
+    option
+        width: 100%
+    
+.birth_form-select
+    min-width: 6.7rem
     width: 25%
-    padding: 0 0 0 1.5rem
     &:last-child
         width: 35%
     
 .custom_form-select
-    @extend %form-field
-    height: 3.5rem
     width: 100%
-    color: #989898
-    padding: 0 0 0 1.5rem
     
-.double_form-select    
-    @extend %form-field
-    height: 3.5rem
+.double_form-select
     width: 47%
-    color: #989898
-    padding: 0 0 0 1.5rem
     
 .btn-change
+    display: block
     @extend .btn-standart
     width: 100%
     border: 1px solid #cdcdcd
@@ -304,3 +345,82 @@
     margin-bottom: 0
     color: #757575
     height: 4rem
+    text-align: center
+    
+//checkbox
+.setting-checkbox_row
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    input[type="checkbox"]
+        margin-right: 1.4rem
+    span
+        display: inline-block
+        color: #000
+        font-family: $main-font
+        font-weight: $regular
+        font-size: 1.2rem
+        line-height: 2
+        
+.settings-drop_form-row.drop-checkbox
+    .control
+        position: relative
+        padding-left: 30px
+        margin-bottom: 0.9rem
+        cursor: pointer
+        font-size: 18px
+    .control input
+        position: absolute
+        z-index: -1
+        opacity: 0
+    .control__indicator
+        position: absolute
+        top: 2px
+        left: 0
+        height: 2rem
+        width: 2rem
+        background: #fff
+        border-radius: $radius
+        border: 1px solid #d5d5d5
+
+    .control:hover input ~ .control__indicator,
+    .control input:focus ~ .control__indicator
+        background: #fff
+    .control input:checked ~ .control__indicator
+        background: #fff
+    .control:hover input:not([disabled]):checked ~ .control__indicator,
+    .control input:checked:focus ~ .control__indicator
+        background: #fff
+    .control input:disabled ~ .control__indicator
+        background: #fff
+        opacity: 0.6
+        pointer-events: none
+    .control__indicator:after 
+        content: ''
+        position: absolute
+        display: none
+    .control input:checked ~ .control__indicator:after 
+        display: block
+    .control--checkbox .control__indicator:after 
+        left: 7px
+        top: 3px
+        width: 3px
+        height: 8px
+        border: solid $red
+        border-width: 0 0.2rem 0.2rem 0
+        transform: rotate(45deg)
+    .control--checkbox input:disabled ~ .control__indicator:after 
+        border-color: #7b7b7b
+//checkbox end
+
+.btn-save
+    display: block
+    min-height: 4rem
+    width: 100%
+    margin-bottom: 1rem
+    font-size: 1.3rem
+    font-weight: $medium
+    font-family: $main-font
+
+    
+    
