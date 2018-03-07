@@ -1,0 +1,114 @@
+//checkbox contact
+.contact-checkbox_row
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    input[type="checkbox"]
+        margin-right: 1.4rem
+    span
+        display: inline-block
+        color: #000
+        font-family: $main-font
+        font-weight: $regular
+        font-size: 1.4rem
+        line-height: 1.5
+        
+        
+.contact-us_form
+    .control
+        position: relative
+        padding-left: 3.5rem
+        margin-bottom: 0.9rem
+        cursor: pointer
+        font-size: 1.8rem
+    .control input
+        position: absolute
+        z-index: -1
+        opacity: 0
+    .control__indicator
+        position: absolute
+        top: 0.2rem
+        left: 0
+        height: 2rem
+        width: 2rem
+        background: #fff
+        border-radius: 100%
+        border: 1px solid #979797
+    .control:hover input ~ .control__indicator,
+    .control input:focus ~ .control__indicator
+        background: #fff
+        border-color: $red
+    .control input:checked ~ .control__indicator
+        background: $red
+        border-color: $red
+    .control:hover input:not([disabled]):checked ~ .control__indicator,
+    .control input:checked:focus ~ .control__indicator
+        background: $red
+        border-color: $red
+    .control input:disabled ~ .control__indicator
+        background: #fff
+        opacity: 0.6
+        pointer-events: none
+    .control__indicator:after 
+        content: ''
+        position: absolute
+        display: none
+    .control input:checked ~ .control__indicator:after 
+        display: block
+    .control--checkbox .control__indicator:after 
+        left: 7px
+        top: 3px
+        width: 3px
+        height: 8px
+        border: solid #fff
+        border-width: 0 0.2rem 0.2rem 0
+        transform: rotate(45deg)
+
+    .control--checkbox input:disabled ~ .control__indicator:after 
+        border-color: #7b7b7b
+//checkbox end
+
+
+.contact-us
+    padding: 3rem 2rem 3.5rem
+    
+.contact-title
+    display: block
+    font-family: $main-font
+    font-size: 1.4rem
+    line-height: 1.7
+    font-weight: $regular
+    color: #000
+    margin-bottom: 2rem
+    
+.contact-us_form-row
+    margin-bottom: 0.9rem
+    
+.contact-us_form-row
+    input,
+    textarea
+        border: 1px solid #dbdbdb
+        border-radius: $radius
+        background-color: #fff
+        width: 100%
+        height: 4rem
+        font-family: $main-font
+        font-size: 1.3rem
+        font-weight: $regular
+        padding: 0 1.9rem
+        appearance: none
+        &:focus
+            border-color: #a0a0a0
+    textarea
+        resize: none
+        min-height: 13rem
+        padding-top: 1.5rem
+        padding-bottom: 1.5rem
+        margin-bottom: 1rem
+            
+.contact-us_checkboxes
+    margin-bottom: 3rem
+    padding-left: 2rem
+    &>p
+        margin-bottom: 2rem
+            

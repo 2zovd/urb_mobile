@@ -3051,3 +3051,137 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
+
+.contact-checkbox_row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contact-checkbox_row input[type="checkbox"] {
+    margin-right: 1.4rem; }
+  .contact-checkbox_row span {
+    display: inline-block;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5; }
+
+.contact-us_form .control {
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+  font-size: 1.8rem; }
+
+.contact-us_form .control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0; }
+
+.contact-us_form .control__indicator {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background: #fff;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 1px solid #979797; }
+
+.contact-us_form .control:hover input ~ .control__indicator,
+.contact-us_form .control input:focus ~ .control__indicator {
+  background: #fff;
+  border-color: #ea4c58; }
+
+.contact-us_form .control input:checked ~ .control__indicator {
+  background: #ea4c58;
+  border-color: #ea4c58; }
+
+.contact-us_form .control:hover input:not([disabled]):checked ~ .control__indicator,
+.contact-us_form .control input:checked:focus ~ .control__indicator {
+  background: #ea4c58;
+  border-color: #ea4c58; }
+
+.contact-us_form .control input:disabled ~ .control__indicator {
+  background: #fff;
+  opacity: 0.6;
+  pointer-events: none; }
+
+.contact-us_form .control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none; }
+
+.contact-us_form .control input:checked ~ .control__indicator:after {
+  display: block; }
+
+.contact-us_form .control--checkbox .control__indicator:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 0.2rem 0.2rem 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.contact-us_form .control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #7b7b7b; }
+
+.contact-us {
+  padding: 3rem 2rem 3.5rem; }
+
+.contact-title {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 2rem; }
+
+.contact-us_form-row {
+  margin-bottom: 0.9rem; }
+
+.contact-us_form-row input,
+.contact-us_form-row textarea {
+  border: 1px solid #dbdbdb;
+  -webkit-border-radius: 0.6rem;
+          border-radius: 0.6rem;
+  background-color: #fff;
+  width: 100%;
+  height: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0 1.9rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  .contact-us_form-row input:focus,
+  .contact-us_form-row textarea:focus {
+    border-color: #a0a0a0; }
+
+.contact-us_form-row textarea {
+  resize: none;
+  min-height: 13rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem; }
+
+.contact-us_checkboxes {
+  margin-bottom: 3rem;
+  padding-left: 2rem; }
+  .contact-us_checkboxes > p {
+    margin-bottom: 2rem; }
