@@ -710,29 +710,35 @@ body
 		display: inline-block
 		padding: 0 1rem
 
-
 .nav-profile_title
 	display: block
-	font-family: #main-font
+	font-family: $main-font
 	font-weight: $medium
 	font-size: 1.3rem
 	text-align: center
 
+%profile-nav-icons
+	background-image: url('../img/profile-icons-sprite.png')
+	background-repeat: no-repeat
+	background-position: 0 0
+	background-size: auto 100%
+	&.ico-chat
+		background-position: 0 0
+	&.ico-letter
+		background-position: 25% 0
+	&.ico-gift
+		background-position: 50% 0
+	&.ico-sticker
+		background-position: 75% 0
+	&.ico-video
+		background-position: 100% 0	
+
 .ico-profile-nav
-    display: block
-    margin: 0 auto 0.8rem
-    width: 3rem
-    height: 3rem
-    background-image: url('../img/profile-icons-sprite.png')
-    background-repeat: no-repeat
-    background-position: 0 0
-    background-size: auto 100%
-    &.ico-gift
-        background-position: 50% 0
-    &.ico-sticker
-        background-position: 75% 0
-    &.ico-video
-        background-position: 100% 0
+	@extend %profile-nav-icons
+	display: block
+	margin: 0 auto 0.8rem
+	width: 3rem
+	height: 3rem
     
 .letter-content
     padding: 0 2rem 6rem

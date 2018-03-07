@@ -104,14 +104,7 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		variableWidth: true
 	});
-	
-	$(".profile-slider").slick({
-		arrows: false,
-		infinite: false,
-		focusOnSelect: true,
-		slidesToShow: 1,
-	});
-	
+
 });
 
 
