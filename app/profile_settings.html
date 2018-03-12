@@ -434,6 +434,7 @@
                                     <label class="settings-title">First name <span class="text-star">*</span></label>
                                 </div>
                                 <input class="settings_form-field" type="text" placeholder="Name">
+								<span class="settings-error-message">This field is required</span>
                             </div>
 
                             <div class="settings-drop_form-row">
@@ -441,6 +442,7 @@
                                     <label class="settings-title">Last name</label>
                                 </div>
                                 <input class="settings_form-field" type="text" placeholder="Last name">
+								<span class="settings-error-message">This field is required</span>
                             </div>
 
                             <div class="settings-drop_form-row">
@@ -467,6 +469,7 @@
                                     </div>
                                    
                                 </div>
+								<span class="settings-error-message">This field is required</span>
                             </div>
 
                             <div class="settings-drop_form-row">
@@ -480,6 +483,7 @@
                                            <option value="United States">United States</option>
                                        </select>
                                    </div>
+									
                                 </div>
                             </div>
 
@@ -489,6 +493,7 @@
                                 </div>
                                 <div class="settings_select-row">
                                     <input class="settings_form-field" type="text" placeholder="Your city">
+									<span class="settings-error-message">This field is required</span>
                                 </div>
                             </div>
 
@@ -505,6 +510,9 @@
                                    </div>
                                 </div>
                             </div>
+                            
+							<button class="btn-save btn-shadow btn-red">Save</button>
+							<span class="settings-drop_content-message error">Changes are successfully saved.</span>	
 
                         </div>
 
@@ -530,11 +538,11 @@
                                 </div>
                                 <div class="settings_select-row">
                                     <div class="select-cover custom_form-select">
-                                       <select id="#">
-                                           <option value="150cm(4' 11'')">150cm(4' 11'')</option>
-                                           <option value="150cm(4' 11'')">155cm(4' 11'')</option>
-                                           <option value="150cm(4' 11'')">160cm(4' 11'')</option>
-                                       </select>
+										<select id="#">
+										   <option value="150cm(4' 11'')">150cm(4' 11'')</option>
+										   <option value="150cm(4' 11'')">155cm(4' 11'')</option>
+										   <option value="150cm(4' 11'')">160cm(4' 11'')</option>
+										</select>
                                    </div>
                                    
                                 </div>
@@ -621,6 +629,10 @@
                                     </div>
                                 </div>
                             </div>
+                            
+							<button class="btn-save btn-shadow btn-red">Save</button>
+							<span class="settings-drop_content-message success">Changes are successfully saved.</span>	
+                            
                         </div>
                         
                     </div>
@@ -701,6 +713,10 @@
                                 </div>
                                 <textarea class="settings_form-textarea" placeholder="Write about your work."></textarea>
                             </div>
+                            
+							<button class="btn-save btn-shadow btn-red">Save</button>
+							<span class="settings-drop_content-message success">Changes are successfully saved.</span>	
+                       
                         </div>
                     </div>
 
@@ -791,7 +807,11 @@
                                     <label class="settings-title">About my partner</label>
                                 </div>
                                 <textarea class="settings_form-textarea" placeholder="Write something about the way you see your partner"></textarea>
+								<span class="settings-error-message">This field is required</span>
                             </div>
+                            
+							<button class="btn-save btn-shadow btn-red">Save</button>
+							<span class="settings-drop_content-message success">Changes are successfully saved.</span>	
 
                         </div>
                     </div>
@@ -814,8 +834,11 @@
                                 <div class="settings_title-holder">
                                     <label class="settings-title">Password</label>
                                 </div>
+                                
                                 <input class="settings_form-field" type="password" placeholder="New password">
                                 <input class="settings_form-field" type="password" placeholder="Confirm password">
+								<span class="settings-error-message">This field is required</span>
+                               
                                 <button type="button" class="btn-change">Change</button>
                             </div>
 
@@ -824,6 +847,8 @@
                                     <label class="settings-title">E-mail</label>
                                 </div>
                                 <input class="settings_form-field" type="text" placeholder="mymail@mail.com">
+								<span class="settings-error-message active">This field is required</span>
+                               
                                 <button type="button" class="btn-change">Change</button>
                             </div>
 
@@ -847,16 +872,12 @@
                                     <span>Promo</span>
                                 </label>
                             </div>
-
+                            
+							<button class="btn-save btn-shadow btn-red">Save</button>
+							<span class="settings-drop_content-message success">Changes are successfully saved.</span>	
+                       
                         </div>
-
-
                     </div>
-
-                </div>
-
-                <div class="settings-container">
-                    <button class="btn-save btn-shadow btn-red">Save</button>
                 </div>
                 
             </main>

@@ -16,7 +16,7 @@
     height: 100%
     img
         position: absolute
-        width: 130%
+        width: 100%
         left: 50%
         top: 50%
         -webkit-transform: translate(-50%,-50%)
@@ -132,11 +132,11 @@
     img
         position: absolute
         z-index: 3
-        width: 150%
+        width: 170%
         height: auto
         left: 50%
-        top: 50%
-        transform: translate(-50%,-50%)
+        top: 0%
+        transform: translate(-50%,0%)
     &.empty
         border: 1px solid #e7e7e7
         background-color: #f6f6f6
@@ -417,10 +417,36 @@
     display: block
     min-height: 4rem
     width: 100%
-    margin-bottom: 1rem
     font-size: 1.3rem
     font-weight: $medium
     font-family: $main-font
 
+.settings-drop_content-message
+	display: block
+	font-size: 1.2rem
+	font-weight: $regular
+	font-family: $main-font
+	margin: 1rem 0
+	text-align: center
+	display: none
+	&.success
+		display: block
+		color: $green
+	&.error
+		display: block
+		color: $red
+
+.settings-error-message
+	display: block
+	display: none
+	font-size: 1rem
+	font-weight: $regular
+	font-family: $main-font
+	text-align: left
+	margin-top: 0.2rem
+	margin-left: 1.5rem
+	color: $red
+	&.active
+		display: block
     
     
