@@ -342,8 +342,10 @@
 	border-radius: $radius
 	overflow: hidden
 	min-width: 12.5rem
+	width: 45%
 	font-family: $slab
 	margin-bottom: 1rem
+	border: 1px solid #dbdbdb
 	strong
 		display: block
 		text-align: center
@@ -378,6 +380,8 @@
 		transform: translate(-50%, 0)
 		width: 110%
 		height: auto
+	@include xs
+		min-height: 17rem
 	@include sm
 		min-height: 19rem
 	@include md
@@ -385,7 +389,6 @@
 
 .ladies-profile_bottom
 	display: block
-	border: 1px solid #dbdbdb
 	border-radius: 0 0 $radius $radius
 	border-top: 0
 	padding: 1.5rem 0.5rem 1.4rem
