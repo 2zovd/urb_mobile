@@ -121,4 +121,11 @@ $('.btn-show-hide').click(function() {
 	$('.content-container').addClass('visible');
 });
 
+//crop avatar button
+$('.btn-as-avatar').on('click', function() {
+	$('.photo-crop_wrap').toggleClass('active');
+});
+$('.btn-close-popup').on('click', function() {
+	$('.photo-crop_wrap').removeClass('active');
+});
 
