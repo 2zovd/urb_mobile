@@ -35,13 +35,12 @@
 	margin-bottom: 1.5rem
 	padding: 1.5rem
 	background-color: rgba(0,0,0,.05)
+	border-radius: $radius
+
+.photo_popup-content
+	width: 100%
 	display: flex
 	justify-content: space-around
-	border-radius: $radius
-	@include sm
-		max-width: 48%
-		flex-direction: column
-		align-items: center
 
 .photo-popup_image
 	max-width: 12rem
@@ -73,6 +72,14 @@
 		display: block
 		color: #fff
 		margin-bottom: 1rem
+		&:nth-child(1),
+		&:nth-child(2)
+			background-color: transparent
+			color: $red
+			border-color: $red
+			i
+				color: $red
+			
 
 .photo-crop_wrap
 	position: fixed
@@ -83,6 +90,7 @@
 	background-color: rgba(0,0,0,.5)
 	z-index: 5
 	overflow-y: scroll
+	display: none
 
 .photo-crop
 	display: block
@@ -109,4 +117,17 @@
 	font-weight: $medium
 	text-align: center
 	margin-bottom: 1rem
+
+.avatar-change
+	display: block
+	font-size: 12px
+	line-height: 1.5
+	text-align: center
+	margin-bottom: 5px
+	&.success
+		display: block
+		color: $green
+	&.error
+		display: block
+		color: $red
 	
