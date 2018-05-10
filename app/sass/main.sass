@@ -1,3 +1,4 @@
+@import 'libs'
 @import 'fonts'
 @import 'vars'
 @import 'media'
@@ -690,7 +691,7 @@ body
 	width: 30rem
 	transform: translateY(120%)
 	box-shadow: 0 0.2rem 2rem rgba(0,0,0,.15)
-	padding: 0.8rem 1.3rem
+	padding: 0 1.3rem
 	display: flex
 	justify-content: space-between
 	background-color: #fff
@@ -717,7 +718,24 @@ body
 			border-right: none
 	a
 		display: inline-block
-		padding: 0 1rem
+		padding: 0.8rem 1rem
+
+.disabled-content
+    position: relative
+    &:after
+        display: block
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.15)
+        pointer-events: none
+        cursor: default
+        z-index: 20
+    *
+        pointer-events: none    
 
 .nav-profile_title
 	display: block
@@ -873,11 +891,132 @@ body
 	height: 2rem
 	fill: #9d9d9d
 	margin: 0 0.7rem
+	position: relative
 	&.btn-send
 		pointer-events: none
 		&.active
 			pointer-events: auto
 			fill: $red
+
+.photos-attached
+    position: absolute
+    top: 0
+    right: 0
+    width: 100%
+    background-color: rgba(0,0,0,.3)
+    transform: translateY(-102%)
+    overflow-x: auto
+    
+.photos-attached_inner
+    display: flex
+    justify-content: flex-end
+    -ms-align-items: center
+    align-items: center
+    flex-wrap: nowrap
+    padding: 5px
+    
+.photos-attached_item
+    position: relative
+    margin: 0 5px
+    display: flex
+    flex-direction: column
+
+.photos-attached_item-img
+    height: 50px
+    width: 60px
+    overflow: hidden 
+    img
+        display: inline-block
+        max-width: 100%
+        height: auto
+        
+.btn-delete-pic
+    position: absolute
+    right: 0
+    top: 0
+    width: 13px
+    height: 13px
+    color: #000
+    font-weight: $light
+    font-size: 10px
+    border-radius: 100%
+    background-color: #fff
+    transform: translate(35%,-35%)
+    z-index: 2
+    opacity: 0.9
+    cursor: pointer
+    text-align: center
+    span
+        display: inline-block
+        vertical-align: middle
+        
+.delete-pic_link
+    display: block
+    text-align: center
+    font-size: 13px
+    color: #fff
+    padding-top: 2px
+    
+.inputfile
+	width: 0.1px
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	z-index: -1
+
+.inputfile + label
+    display: inline-block
+    cursor: pointer
+    width: 2rem
+    height: 2rem
+
+.inputfile:focus + label,
+.inputfile + label:hover 
+    svg
+        
+
+.inputfile:focus + label
+	svg
+        fill: 
+    
+.letter-message_button
+	&.btn-smile
+		cursor: pointer
+		&.active
+			pointer-events: auto
+			fill: $red
+    
+.smile-drop
+	position: absolute
+	bottom: 0
+	right: 15px
+	box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.15)
+	border-radius: $radius
+	width: 30rem
+	padding: 10px
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	z-index: 10
+	background-color: #fff
+	transform: translateY(-50px)
+	display: none
+	&.active
+		display: block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	button
+		display: inline-block
+		margin: 5px
+		cursor: pointer
+        background: none
+        border: none
+	img
+		display: inline-block
     
 .btn-chat
 	display: inline-block
@@ -973,12 +1112,13 @@ body
 // notifications
 
 .notifications-row
-	position: fixed
-	bottom: 0
-	left: 0
-	right: 0
-	&.disabled
-		display: none
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    display: none
+    &.disabled
+        display: none
 	
 .notification_new-message
 	background-color: #fff
@@ -1274,36 +1414,40 @@ body
 	display: flex
 	
 .btn-gift-total
-	background-color: $red
-	color: #fff
-	border-radius: $radius
-	overflow: hidden
-	font-size: 1.3rem
-	font-family: $main-font
-	font-weight: $regular
-	height: 3.5rem
-	display: flex
-	align-items: center
-	justify-content: center
-	flex-direction: row
-	cursor: pointer
-	span
-		display: inline-block
-		min-width: 7.5rem
-	p
-		height: 3.5rem
-		background-color: #bf3e48
-		display: flex
-		align-items: center
-		flex-direction: column
-		justify-content: center
-		font-size: 1.2rem
-		line-height: 1
-		color: #ff6873
-	strong
-		font-weight: normal
-		display: block
-		min-width: 5.7rem
+    background-color: $red
+    color: #fff
+    border-radius: $radius
+    overflow: hidden
+    font-size: 1.3rem
+    font-family: $main-font
+    font-weight: $regular
+    height: 3.5rem
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: row
+    cursor: pointer
+    .btn-gift-total_inner
+        display: inline-block
+        min-width: 7.5rem
+    p
+        height: 3.5rem
+        background-color: #bf3e48
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        font-size: 1.2rem
+        line-height: 1
+        color: #ff6873
+    strong
+        font-weight: normal
+        display: block
+        min-width: 5.7rem
+    span,
+    i
+        display: inline-block
+        font-style: normal
 	
 .input-message-field
 	&.gift-message
@@ -1312,6 +1456,9 @@ body
 			@include sm
 				max-width: 60%
 				width: 100%
+    
+.letter-field_right
+    display: flex
 
 //animations
 
