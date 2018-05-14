@@ -102,7 +102,16 @@ $(document).ready(function() {
 		infinite: false,
 		focusOnSelect: true,
 		slidesToShow: 1,
-		variableWidth: true
+		variableWidth: false
+	});
+	
+	// gallery slider slick
+	$(".photo-gallery_slider-inner").slick({
+		arrows: false,
+		infinite: true,
+		focusOnSelect: true,
+		slidesToShow: 1,
+		adaptiveHeight: true
 	});
 
 });

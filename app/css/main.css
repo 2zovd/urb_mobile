@@ -74,7 +74,7 @@
 
 /*Colors*/
 /*Font weight*/
-.btn-custom-mob, .btn-custom-all, .notification-button, .btn-schedule-call,
+.btn-custom-mob, .btn-custom-all, .notification-button, .btn-gallery-close, .btn-gallery-invite, .btn-schedule-call,
 .btn-upload,
 .btn-image-nav {
   background-color: #ec5e68;
@@ -86,7 +86,7 @@
   line-height: 2.2em;
   padding: 0 1.1em;
   border: 1px solid #ec5e68; }
-  .btn-custom-mob.reverse, .reverse.btn-custom-all, .reverse.notification-button, .reverse.btn-schedule-call,
+  .btn-custom-mob.reverse, .reverse.btn-custom-all, .reverse.notification-button, .reverse.btn-gallery-close, .reverse.btn-gallery-invite, .reverse.btn-schedule-call,
   .reverse.btn-upload,
   .reverse.btn-image-nav {
     color: #ec5e68;
@@ -3175,6 +3175,98 @@ body {
   background-color: #ea4c58;
   color: #fff;
   margin-top: 15px; }
+
+/*profile gallery*/
+.photo-gallery_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 100;
+  padding-bottom: 30px; }
+
+.photo-gallery_header {
+  padding: 10px 20px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.photo-gallery_counter {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px; }
+
+.btn-gallery-close {
+  color: #fff;
+  background: transparent;
+  padding: 0 25px;
+  border-color: rgba(255, 255, 255, 0.3); }
+
+.btn-gallery-invite {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  min-width: 210px;
+  z-index: 5;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer; }
+  .btn-gallery-invite:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/ico-chat-white.png");
+    margin-right: 10px;
+    margin-left: -20px; }
+
+.photo-gallery_slider-item {
+  position: relative;
+  padding: 0 20px;
+  height: 100%;
+  text-align: center; }
+  .photo-gallery_slider-item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(transparent));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3), transparent);
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), transparent);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); }
+  .photo-gallery_slider-item img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
 
 .settings-container {
   padding: 0 2rem;
