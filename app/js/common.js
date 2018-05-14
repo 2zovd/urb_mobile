@@ -113,6 +113,9 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		adaptiveHeight: true
 	});
+	$('.btn-gallery-close').on('click', function() {
+		$('.photo-gallery_modal').css('display', 'none')
+	})
 
 });
 

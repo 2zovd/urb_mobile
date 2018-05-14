@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Search</title>
+
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+		<link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body>
+
+		<div class="wrapper-mob">
+
+			<!--required information form section-->
+			<main class="required-form">
+
+				<div class="settings-container settings-content search-inner">
+
+					<div class="settings-drop_form-row">
+						<div class="settings-drop_id">
+							<span>ID</span>
+							<input class="settings_form-field" type="text" placeholder="023">
+							<div class="select-cover custom_form-select">
+								<select >
+									<option value="Select country" disabled selected >Ukraine</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="settings-drop_form-row">
+						<div class="settings_title-holder">
+							<label class="settings-title">Her Age</label>
+						</div>
+						<div class="settings_select-row">
+							<div class="select-cover double_form-select">
+								<select id="#">
+									<option value="From">From</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+								</select>
+							</div>
+							<div class="select-cover double_form-select">
+								<select id="#">
+									<option value="To">To</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+								</select>
+							</div>
+						</div>
+
+
+					</div>
+
+					<div class="settings-drop_form-row">
+						<div class="settings_select-row search-status">
+							<div class="settings_title-holder">
+								<label class="settings-title">Status</label>
+							</div>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="settings-drop_form-row">
+						<button class="btn-save btn-shadow btn-red">Search</button>
+					</div>
+
+					<div class="settings-drop_form-row">
+						<button class="btn-save btn-shadow btn-transparent">Advanced search</button>
+					</div>
+
+					<div class="advanced-search">
+						<div class="settings-drop_form-row">
+							<input class="settings_form-field" type="text" placeholder="Name">
+							<span class="settings-error-message">This field is required</span>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_select-row">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="Select country" disabled selected hidden>City</option>
+										<option value="United States">Kiev</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+
+							<div class="settings_select-row">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="Select religion" disabled selected hidden>Religion</option>
+										<option value="Muslim">Muslim</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_select-row">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="Children" disabled selected hidden>Children</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_title-holder">
+								<label class="settings-title">Weight (lbs-kg)</label>
+							</div>
+							<div class="settings_select-row search-double-select custom_form-select">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="56kg (123.5 lbs)">From</option>
+										<option value="56kg (123.5 lbs)">56kg (123.5 lbs)</option>
+									</select>
+								</div>
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="56kg (123.5 lbs)">To</option>
+										<option value="56kg (123.5 lbs)">56kg (123.5 lbs)</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_title-holder">
+								<label class="settings-title">Height</label>
+							</div>
+							<div class="settings_select-row search-double-select">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="150cm(4' 11'')">From</option>
+										<option value="150cm(4' 11'')">155cm(4' 11'')</option>
+										<option value="150cm(4' 11'')">160cm(4' 11'')</option>
+									</select>
+								</div>
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="150cm(4' 11'')">To</option>
+										<option value="150cm(4' 11'')">155cm(4' 11'')</option>
+										<option value="150cm(4' 11'')">160cm(4' 11'')</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_title-holder">
+								<label class="settings-title">Eyes color</label>
+							</div>
+							<div class="settings_select-row">
+								<div class="select-cover custom_form-select">
+									<select id="#">
+										<option value="Amber">Amber</option>
+										<option value="Blue">Blue</option>
+										<option value="Brown">Brown</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="settings-drop_form-row">
+							<div class="settings_title-holder">
+								<label class="settings-title">Hair color</label>
+							</div>
+							<div class="settings_select-row">
+								<div class="select-row">
+									<div class="select-cover custom_form-select">
+										<select id="#">
+											<option value="Black">Black</option>
+											<option value="Brown">Brown</option>
+											<option value="Blond">Blond</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</main>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.3.2/jquery.sidebar.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/common.js"></script>
+
+
+	</body>
+
+</html>
