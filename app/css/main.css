@@ -4181,3 +4181,33 @@ body {
 
 .search-double-select .select-cover:first-child {
   margin-right: 10px; }
+
+.search-result_header {
+  padding: 0 15px;
+  padding-bottom: #dedede;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.search-result_select,
+.search-result_title {
+  background: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #757575;
+  border: none;
+  outline: none; }
+
+.search-result_select {
+  padding-left: 5px; }
