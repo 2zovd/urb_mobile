@@ -899,13 +899,16 @@ body
 			fill: $red
 
 .photos-attached
-    position: absolute
-    top: 0
-    right: 0
-    width: 100%
-    background-color: rgba(0,0,0,.3)
-    transform: translateY(-102%)
-    overflow-x: auto
+	position: absolute
+	top: 0
+	right: 0
+	width: 100%
+	background-color: rgba(0,0,0,.3)
+	transform: translateY(-102%) 
+	overflow-x: auto
+	display: none
+	&.active
+		display: block
     
 .photos-attached_inner
     display: flex

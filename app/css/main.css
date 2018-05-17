@@ -1289,7 +1289,10 @@ body {
   -webkit-transform: translateY(-102%);
       -ms-transform: translateY(-102%);
           transform: translateY(-102%);
-  overflow-x: auto; }
+  overflow-x: auto;
+  display: none; }
+  .photos-attached.active {
+    display: block; }
 
 .photos-attached_inner {
   display: -webkit-box;
@@ -3789,7 +3792,8 @@ body {
   .settings-error-message.active {
     display: block; }
 
-.required-form .settings-title {
+.required-form .settings-title,
+.search-form .settings-title {
   margin-bottom: 1.5rem; }
 
 .contact-checkbox_row {
