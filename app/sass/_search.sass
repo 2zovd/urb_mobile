@@ -73,6 +73,17 @@
 			margin-right: 10px
 
 // search result
+.search-form
+	display: none
+	&.active
+		display: block
+
+.search-result
+	position: relative
+	padding-top: 37px
+	display: none
+	&.active
+		display: block
 
 .search-result_header
 	padding: 0 15px
@@ -81,6 +92,11 @@
 	display: flex
 	justify-content: flex-start
 	align-items: center
+	border-bottom: 0.1rem solid #dedede
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
 
 .search-result_select,
 .search-result_title
@@ -94,4 +110,25 @@
 
 .search-result_select
 	padding-left: 5px
+	
+.message-list_search
+	.message-list_row
+		background-color: #f2f2f2
+
+.btn-search-filter
+	display: none
+	color: #878787
+	font-size: 16px
+	transform: rotate(90deg)
+	border: none
+	background: none
+	appearance: none
+	margin-right: 10px
+	&.active
+		display: block
+
+.header-mob_right
+	display: flex
+	
+	
 	

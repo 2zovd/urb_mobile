@@ -292,6 +292,7 @@ body {
             align-items: center; }
 
 .btn-header_chat {
+  display: inline-block;
   position: relative;
   width: 2.5rem;
   height: 2.3rem;
@@ -4182,6 +4183,18 @@ body {
 .search-double-select .select-cover:first-child {
   margin-right: 10px; }
 
+.search-form {
+  display: none; }
+  .search-form.active {
+    display: block; }
+
+.search-result {
+  position: relative;
+  padding-top: 37px;
+  display: none; }
+  .search-result.active {
+    display: block; }
+
 .search-result_header {
   padding: 0 15px;
   padding-bottom: #dedede;
@@ -4197,7 +4210,12 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  border-bottom: 0.1rem solid #dedede;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
 
 .search-result_select,
 .search-result_title {
@@ -4211,3 +4229,28 @@ body {
 
 .search-result_select {
   padding-left: 5px; }
+
+.message-list_search .message-list_row {
+  background-color: #f2f2f2; }
+
+.btn-search-filter {
+  display: none;
+  color: #878787;
+  font-size: 16px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  border: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 10px; }
+  .btn-search-filter.active {
+    display: block; }
+
+.header-mob_right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
